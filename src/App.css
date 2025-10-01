@@ -1,0 +1,1140 @@
+/* App.css */
+
+/* Banner Title Styles */
+.title.wow.fadeInUp {
+  font-size: clamp(2.5rem, 5vw, 4rem) !important;
+  font-weight: 800 !important;
+  line-height: 1.2 !important;
+  color: #ffffff !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5) !important;
+  margin-bottom: 30px !important;
+  letter-spacing: -0.02em !important;
+}
+
+.title.wow.fadeInUp span {
+  color: #F26F20 !important;
+  background: linear-gradient(135deg, #F26F20 0%, #FF8B40 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  font-weight: 900 !important;
+}
+
+/* Enhanced Title Animation */
+@keyframes enhancedFadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(60px) scale(0.9);
+  }
+  50% {
+    opacity: 0.8;
+    transform: translateY(-10px) scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.title.wow.fadeInUp {
+  animation: enhancedFadeInUp 1.5s ease-out forwards !important;
+}
+
+/* Responsive Title Styles */
+@media (max-width: 768px) {
+  .title.wow.fadeInUp {
+    font-size: clamp(1.8rem, 6vw, 2.5rem) !important;
+    line-height: 1.3 !important;
+    margin-bottom: 20px !important;
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .title.wow.fadeInUp {
+    font-size: clamp(1.5rem, 7vw, 2rem) !important;
+    letter-spacing: -0.01em !important;
+  }
+}
+
+/* Title Hover Effect */
+.title.wow.fadeInUp:hover {
+  transform: translateY(-2px) !important;
+  transition: transform 0.3s ease !important;
+}
+
+.title.wow.fadeInUp:hover span {
+  background: linear-gradient(135deg, #FF8B40 0%, #F26F20 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+}
+
+/* Service Details Enhancement Styles */
+.z-index-1 {
+  z-index: 1;
+}
+
+.opacity-10 {
+  opacity: 0.1;
+}
+
+.opacity-90 {
+  opacity: 0.9;
+}
+
+.border-white-50 {
+  border-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.quote-section {
+  border-left: 4px solid #F26F20 !important;
+}
+
+/* Bootstrap utility classes for better compatibility */
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+.text-primary {
+  color: #F26F20 !important;
+}
+
+.text-success {
+  color: #28a745 !important;
+}
+
+.text-info {
+  color: #F26F20 !important;
+}
+
+.border-3 {
+  border-width: 3px !important;
+}
+
+.border-start {
+  border-left: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+}
+
+.border-info {
+  border-color: #F26F20 !important;
+}
+
+.border-primary {
+  border-color: #F26F20 !important;
+}
+
+.fw-medium {
+  font-weight: 500 !important;
+}
+
+.rounded-3 {
+  border-radius: 0.375rem !important;
+}
+
+/* Service Details specific styles */
+.service-hero-section {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 15px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.feature-card {
+  transition: all 0.3s ease;
+  border: 1px solid #e9ecef;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border-color: #F26F20;
+}
+
+.benefit-item {
+  transition: all 0.3s ease;
+}
+
+.benefit-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.spec-item {
+  transition: all 0.3s ease;
+}
+
+.spec-item:hover {
+  background-color: #ffffff;
+  transform: translateX(10px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.cta-card {
+  background: linear-gradient(135deg, #F26F20 0%, #e55a0d 100%);
+  box-shadow: 0 15px 35px rgba(242, 111, 32, 0.3);
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2c3e50;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #F26F20, #e55a0d);
+  border-radius: 3px;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  line-height: 1.2;
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+/* Services Listing Cards */
+.services-listing-container .service-card {
+  background: white;
+  border: 1px solid #e9ecef;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  min-height: 450px;
+  max-height: 450px;
+  overflow: hidden;
+}
+
+.services-listing-container .service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  border-color: #F26F20;
+}
+
+.services-listing-container .service-card-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.services-listing-container .service-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.3;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-listing-container .service-description {
+  font-size: 0.95rem;
+  color: #6c757d;
+  line-height: 1.5;
+  min-height: 80px;
+  max-height: 80px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.services-listing-container .service-features {
+  flex-grow: 1;
+  min-height: 120px;
+}
+
+.services-listing-container .feature-list li {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.services-listing-container .service-card-footer {
+  margin-top: auto;
+}
+
+.services-listing-container .service-icon {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-listing-container .service-category-badge {
+  text-align: center;
+  min-height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ensure consistent button styling */
+.services-listing-container .btn:hover {
+  background-color: #e55a0d !important;
+  border-color: #e55a0d !important;
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .services-listing-container .service-card {
+    min-height: 400px;
+    max-height: 400px;
+  }
+  
+  .services-listing-container .service-description {
+    min-height: 60px;
+    max-height: 60px;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+  }
+  
+  .services-listing-container .service-features {
+    min-height: 100px;
+  }
+}
+.service-cards-section {
+  margin-top: 40px;
+}
+
+.service-card {
+  transition: all 0.3s ease;
+  border: 1px solid #e9ecef;
+  height: 100%;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border-color: #F26F20;
+}
+
+.service-card .card-header {
+  border-bottom: 1px solid #f8f9fa;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.service-card .card-icon {
+  display: inline-block;
+}
+
+.service-card .card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0;
+}
+
+.service-card .service-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.service-card .service-list li {
+  display: flex;
+  align-items: flex-start;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #6c757d;
+}
+
+.service-card .service-list li i {
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+/* Responsive Design for Cards */
+@media (max-width: 768px) {
+  .service-cards-section .col-lg-4 {
+    margin-bottom: 20px;
+  }
+  
+  .service-card {
+    margin-bottom: 0;
+  }
+  
+  .service-hero-section {
+    padding: 20px 15px;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .hero-description {
+    font-size: 1.1rem;
+  }
+  
+  .section-title {
+    font-size: 1.75rem;
+  }
+}
+
+/* 20 Years Excellence Animated Logo Styles */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    filter: drop-shadow(0 8px 25px rgba(242, 111, 32, 0.3));
+  }
+  100% {
+    transform: scale(1.05);
+    filter: drop-shadow(0 12px 35px rgba(242, 111, 32, 0.5));
+  }
+}
+
+/* Excellence Logo Hover Effects */
+.excellence-logo:hover {
+  transform: scale(1.1) !important;
+  filter: drop-shadow(0 15px 40px rgba(242, 111, 32, 0.6)) !important;
+  transition: all 0.3s ease !important;
+}
+
+/* Responsive design for excellence logo */
+@media (max-width: 768px) {
+  .excellence-badge {
+    top: 80px !important;
+    right: 20px !important;
+  }
+  
+  .excellence-logo {
+    width: 80px !important;
+    max-height: 80px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .excellence-badge {
+    top: 60px !important;
+    right: 15px !important;
+  }
+  
+  .excellence-logo {
+    width: 60px !important;
+    max-height: 60px !important;
+  }
+}
+
+/* Service CTA Section Enhancement */
+.service-cta {
+  background: linear-gradient(135deg, #F26F20 0%, #FF8B40 100%);
+  border-radius: 15px;
+  padding: 40px 30px;
+  margin-top: 50px;
+  box-shadow: 0 10px 30px rgba(242, 111, 32, 0.2);
+}
+
+.service-cta .cta-content h4 {
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.service-cta .cta-content p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.service-cta .main-btn {
+  background-color: white;
+  color: #F26F20;
+  border-color: white;
+  font-weight: 600;
+  padding: 12px 25px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.service-cta .main-btn:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.service-cta .btn-outline {
+  background-color: transparent;
+  color: white;
+  border-color: white;
+}
+
+.service-cta .btn-outline:hover {
+  background-color: white;
+  color: #F26F20;
+}
+
+/* FAQ Section Enhancement */
+.pt-40 {
+  padding-top: 40px;
+}
+
+.pb-15 {
+  padding-bottom: 15px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+/* Service Card Hover Effects */
+.service-card-hover {
+  overflow: hidden;
+  position: relative;
+}
+
+.service-card-hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(242, 111, 32, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.service-card-hover:hover::before {
+  left: 100%;
+}
+
+.service-card-hover .service-icon {
+  transition: all 0.3s ease;
+}
+
+.service-card-hover:hover .service-icon {
+  animation: iconBounce 0.6s ease;
+}
+
+@keyframes iconBounce {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1) rotate(5deg); }
+  100% { transform: scale(1); }
+}
+
+.service-card-hover .service-title a {
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.service-card-hover:hover .service-title a {
+  color: #F26F20 !important;
+}
+
+.service-card-hover .service-title a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 50%;
+  background-color: #F26F20;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.service-card-hover:hover .service-title a::after {
+  width: 100%;
+}
+
+.service-card-hover .service-description {
+  transition: all 0.3s ease;
+}
+
+.service-card-hover:hover .service-description {
+  color: #666;
+  transform: translateY(-2px);
+}
+
+.service-card-hover .feature-list li {
+  transition: all 0.3s ease;
+}
+
+.service-card-hover:hover .feature-list li {
+  transform: translateX(5px);
+}
+
+.service-card-hover:hover .feature-list li .ri-check-line {
+  color: #FF8B40 !important;
+  animation: checkPulse 0.6s ease;
+}
+
+@keyframes checkPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+/* Additional hover effects for service listing */
+.services-listing-container .service-card {
+  backdrop-filter: blur(10px);
+}
+
+.service-card-hover:hover {
+  z-index: 2;
+}
+
+/* Hero Section Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .rs-banner-2 {
+    padding: 120px 0 80px !important;
+    min-height: 100vh !important;
+  }
+  
+  .rs-banner-2__content {
+    text-align: center;
+    padding: 0 15px;
+  }
+  
+  .rs-banner-2__content .rs-sub-heading {
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  
+  .rs-banner-2__content .rs-sub-heading span {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+  
+  .rs-banner-2__content .rs-sub-heading img {
+    display: none;
+  }
+  
+  .rs-banner-2__content .title {
+    font-size: 28px !important;
+    line-height: 1.3 !important;
+    margin-bottom: 16px !important;
+  }
+  
+  .rs-banner-2__content p {
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+    margin-bottom: 25px !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+  }
+  
+  .rs-banner-2__content .main-btn {
+    padding: 14px 28px !important;
+    font-size: 15px !important;
+    border-radius: 8px !important;
+    background: linear-gradient(135deg, #F26F20 0%, #FF8B40 100%) !important;
+    border: none !important;
+    box-shadow: 0 8px 25px rgba(242, 111, 32, 0.3) !important;
+    transition: all 0.3s ease !important;
+  }
+  
+  .rs-banner-2__content .main-btn:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 12px 35px rgba(242, 111, 32, 0.4) !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .rs-banner-2 {
+    padding: 100px 0 60px !important;
+  }
+  
+  .rs-banner-2__content .title {
+    font-size: 24px !important;
+    line-height: 1.4 !important;
+  }
+  
+  .rs-banner-2__content p {
+    font-size: 14px !important;
+    padding: 0 10px;
+  }
+  
+  .rs-banner-2__content .main-btn {
+    padding: 12px 24px !important;
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .rs-banner-2 {
+    padding: 80px 0 50px !important;
+  }
+  
+  .rs-banner-2__content .title {
+    font-size: 22px !important;
+  }
+  
+  .rs-banner-2__content p {
+    font-size: 13px !important;
+  }
+}
+
+/* Hero Video Background Mobile Optimization */
+@media (max-width: 768px) {
+  .rs-banner-2 > div:first-child {
+    height: 120vh !important;
+    width: 120vw !important;
+  }
+  
+  .rs-banner-2 > div:first-child iframe {
+    transform: scale(1.2);
+  }
+}
+
+@media (max-width: 576px) {
+  .rs-banner-2 > div:first-child {
+    height: 140vh !important;
+    width: 140vw !important;
+  }
+}
+
+/* Hero Content Container Mobile */
+@media (max-width: 992px) {
+  .rs-banner-2 .container {
+    max-width: 100% !important;
+    padding: 0 20px !important;
+  }
+  
+  .rs-banner-2 .col-lg-2 {
+    display: none;
+  }
+  
+  .rs-banner-2 .col-lg-8 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .rs-banner-2 .container {
+    padding: 0 15px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .rs-banner-2 .container {
+    padding: 0 10px !important;
+  }
+}
+
+/* Mobile Dark Overlay Enhancement */
+@media (max-width: 768px) {
+  .rs-banner-2 > div:nth-child(2) {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+  }
+}
+
+/* Excellence Badge Mobile Responsive */
+@media (max-width: 768px) {
+  .excellence-badge {
+    top: 70px !important;
+    right: 15px !important;
+  }
+  
+  .excellence-badge img {
+    width: 100px !important;
+    max-height: 90px !important;
+  }
+  
+  .excellence-ring {
+    width: 120px !important;
+    height: 120px !important;
+    top: -10px !important;
+    left: -10px !important;
+  }
+  
+  .excellence-pulse {
+    width: 130px !important;
+    height: 130px !important;
+    top: -15px !important;
+    left: -15px !important;
+  }
+  
+  .excellence-hover-ring {
+    width: 140px !important;
+    height: 140px !important;
+    top: -20px !important;
+    left: -20px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .excellence-badge {
+    top: 60px !important;
+    right: 10px !important;
+  }
+  
+  .excellence-badge img {
+    width: 80px !important;
+    max-height: 70px !important;
+  }
+  
+  .excellence-ring {
+    width: 90px !important;
+    height: 90px !important;
+    top: -10px !important;
+    left: -10px !important;
+  }
+  
+  .excellence-pulse {
+    width: 110px !important;
+    height: 110px !important;
+    top: -15px !important;
+    left: -15px !important;
+  }
+  
+  .excellence-hover-ring {
+    width: 120px !important;
+    height: 120px !important;
+    top: -20px !important;
+    left: -20px !important;
+  }
+}
+
+/* Mobile Typography Enhancements */
+@media (max-width: 768px) {
+  .rs-banner-2__content .title span {
+    display: block;
+    margin-top: 5px;
+  }
+}
+
+/* Performance Optimization for Mobile */
+@media (max-width: 768px) {
+  .excellence-badge {
+    will-change: transform;
+  }
+  
+  .rs-banner-2__content * {
+    will-change: transform, opacity;
+  }
+}
+
+/* 20 Years Excellence Anniversary Animations */
+@keyframes excellenceFloat {
+  0% { 
+    transform: translateY(0px) rotate(0deg); 
+  }
+  50% { 
+    transform: translateY(-15px) rotate(2deg); 
+  }
+  100% { 
+    transform: translateY(0px) rotate(0deg); 
+  }
+}
+
+@keyframes excellenceGlow {
+  0% { 
+    filter: drop-shadow(0 12px 35px rgba(242, 111, 32, 0.4));
+    transform: scale(1);
+  }
+  100% { 
+    filter: drop-shadow(0 18px 45px rgba(242, 111, 32, 0.7));
+    transform: scale(1.05);
+  }
+}
+
+@keyframes excellenceRotate {
+  0% { 
+    transform: rotate(0deg); 
+  }
+  100% { 
+    transform: rotate(360deg); 
+  }
+}
+
+@keyframes excellencePulse {
+  0% { 
+    transform: scale(1);
+    opacity: 0.2;
+  }
+  50% { 
+    transform: scale(1.1);
+    opacity: 0.5;
+  }
+  100% { 
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
+/* Excellence Logo Hover Effects */
+.excellence-logo:hover {
+  transform: scale(1.1) rotate(5deg) !important;
+  filter: drop-shadow(0 20px 50px rgba(242, 111, 32, 0.8)) !important;
+}
+
+/* Enhanced Interactive Hover Animations */
+@keyframes excellenceFloatHover {
+  0% { 
+    transform: translateY(0px) rotate(-2deg); 
+  }
+  50% { 
+    transform: translateY(-8px) rotate(2deg); 
+  }
+  100% { 
+    transform: translateY(0px) rotate(-2deg); 
+  }
+}
+
+@keyframes excellenceGlowIntense {
+  0% { 
+    filter: drop-shadow(0 15px 40px rgba(242, 111, 32, 0.6));
+  }
+  100% { 
+    filter: drop-shadow(0 25px 60px rgba(242, 111, 32, 1));
+  }
+}
+
+/* Interactive Badge Hover Effects */
+.excellence-badge-interactive:hover .excellence-ring {
+  animation: excellenceRotate 1s linear infinite !important;
+  border-top-color: #FF8B40 !important;
+  border-width: 4px !important;
+}
+
+.excellence-badge-interactive:hover .excellence-pulse {
+  animation: excellencePulseHover 0.8s ease-in-out infinite !important;
+  border-color: rgba(242, 111, 32, 0.5) !important;
+}
+
+.excellence-badge-interactive:hover .excellence-hover-ring {
+  opacity: 1 !important;
+  transform: scale(1.2) !important;
+  border-color: rgba(242, 111, 32, 0.3) !important;
+  animation: excellenceHoverRing 1.5s ease-in-out infinite !important;
+}
+
+@keyframes excellencePulseHover {
+  0% { 
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  50% { 
+    transform: scale(1.15);
+    opacity: 0.8;
+  }
+  100% { 
+    transform: scale(1.3);
+    opacity: 0;
+  }
+}
+
+@keyframes excellenceHoverRing {
+  0% { 
+    transform: scale(1.2) rotate(0deg);
+    opacity: 0.3;
+  }
+  50% { 
+    transform: scale(1.4) rotate(180deg);
+    opacity: 0.6;
+  }
+  100% { 
+    transform: scale(1.6) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Logo Interactive Effects */
+.excellence-logo-interactive:hover {
+  transform: scale(1.2) rotate(10deg) !important;
+  filter: drop-shadow(0 25px 60px rgba(242, 111, 32, 1)) 
+          brightness(1.2) 
+          saturate(1.3) !important;
+}
+
+/* Click Animation Effect */
+.excellence-badge-interactive:active {
+  transform: scale(0.95) !important;
+}
+
+.excellence-badge-interactive:active .excellence-logo-interactive {
+  transform: scale(1.1) rotate(-5deg) !important;
+}
+
+/* Responsive Excellence Badge */
+@media (max-width: 768px) {
+  .excellence-badge {
+    top: 80px !important;
+    right: 20px !important;
+    transform: scale(0.8) !important;
+  }
+  
+  .excellence-badge img {
+    width: 120px !important;
+    max-height: 110px !important;
+  }
+  
+  .excellence-badge > div {
+    width: 150px !important;
+    height: 150px !important;
+    top: -10px !important;
+    left: -10px !important;
+  }
+}
+
+/* Enhanced Mobile Excellence Badge Responsiveness */
+@media (max-width: 992px) {
+  .excellence-badge {
+    top: clamp(70px, 10vh, 100px) !important;
+    right: clamp(15px, 3vw, 30px) !important;
+  }
+  
+  .excellence-badge img {
+    width: clamp(100px, 15vw, 140px) !important;
+    max-height: clamp(90px, 13vw, 130px) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .excellence-badge {
+    top: clamp(60px, 8vh, 80px) !important;
+    right: clamp(10px, 2.5vw, 20px) !important;
+    transform: scale(0.85) !important;
+    transition: all 0.3s ease !important;
+  }
+  
+  .excellence-badge img {
+    width: clamp(80px, 12vw, 110px) !important;
+    max-height: clamp(70px, 11vw, 100px) !important;
+  }
+  
+  .excellence-ring {
+    width: clamp(100px, 14vw, 130px) !important;
+    height: clamp(100px, 14vw, 130px) !important;
+    top: clamp(-8px, -1vw, -12px) !important;
+    left: clamp(-8px, -1vw, -12px) !important;
+    border-width: 2px !important;
+  }
+  
+  .excellence-pulse {
+    width: clamp(110px, 16vw, 140px) !important;
+    height: clamp(110px, 16vw, 140px) !important;
+    top: clamp(-12px, -1.5vw, -16px) !important;
+    left: clamp(-12px, -1.5vw, -16px) !important;
+  }
+  
+  .excellence-hover-ring {
+    width: clamp(120px, 18vw, 150px) !important;
+    height: clamp(120px, 18vw, 150px) !important;
+    top: clamp(-16px, -2vw, -20px) !important;
+    left: clamp(-16px, -2vw, -20px) !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .excellence-badge {
+    top: clamp(50px, 7vh, 70px) !important;
+    right: clamp(8px, 2vw, 15px) !important;
+    transform: scale(0.7) !important;
+  }
+  
+  .excellence-badge img {
+    width: clamp(60px, 10vw, 90px) !important;
+    max-height: clamp(55px, 9vw, 80px) !important;
+  }
+  
+  .excellence-ring {
+    width: clamp(80px, 12vw, 110px) !important;
+    height: clamp(80px, 12vw, 110px) !important;
+    top: clamp(-6px, -0.8vw, -10px) !important;
+    left: clamp(-6px, -0.8vw, -10px) !important;
+    border-width: 1.5px !important;
+  }
+  
+  .excellence-pulse {
+    width: clamp(90px, 14vw, 120px) !important;
+    height: clamp(90px, 14vw, 120px) !important;
+    top: clamp(-10px, -1.2vw, -14px) !important;
+    left: clamp(-10px, -1.2vw, -14px) !important;
+  }
+  
+  .excellence-hover-ring {
+    width: clamp(100px, 16vw, 130px) !important;
+    height: clamp(100px, 16vw, 130px) !important;
+    top: clamp(-14px, -1.6vw, -18px) !important;
+    left: clamp(-14px, -1.6vw, -18px) !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .excellence-badge {
+    top: clamp(45px, 6vh, 60px) !important;
+    right: clamp(5px, 1.5vw, 12px) !important;
+    transform: scale(0.6) !important;
+  }
+  
+  .excellence-badge img {
+    width: clamp(50px, 8vw, 70px) !important;
+    max-height: clamp(45px, 7vw, 65px) !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .excellence-badge {
+    top: clamp(40px, 5vh, 55px) !important;
+    right: clamp(3px, 1vw, 8px) !important;
+    transform: scale(0.5) !important;
+  }
+  
+  .excellence-badge img {
+    width: clamp(40px, 6vw, 60px) !important;
+    max-height: clamp(35px, 5vw, 55px) !important;
+  }
+}
+
+/* Mobile Touch Optimizations */
+@media (max-width: 768px) {
+  .excellence-badge-interactive {
+    cursor: pointer !important;
+    -webkit-tap-highlight-color: transparent !important;
+  }
+  
+  .excellence-badge-interactive:hover {
+    transform: scale(0.9) !important;
+  }
+  
+  .excellence-badge-interactive:active {
+    transform: scale(0.75) !important;
+  }
+}
+
+/* Portrait Orientation Optimization */
+@media (max-width: 768px) and (orientation: portrait) {
+  .excellence-badge {
+    top: clamp(55px, 7vh, 75px) !important;
+    right: clamp(8px, 2vw, 18px) !important;
+  }
+}
+
+/* Landscape Orientation Optimization */
+@media (max-width: 768px) and (orientation: landscape) {
+  .excellence-badge {
+    top: clamp(40px, 6vh, 60px) !important;
+    right: clamp(12px, 3vw, 25px) !important;
+    transform: scale(0.75) !important;
+  }
+}
+
+/* High DPI Display Optimization */
+@media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+  .excellence-badge img {
+    image-rendering: -webkit-optimize-contrast !important;
+    image-rendering: crisp-edges !important;
+  }
+}
