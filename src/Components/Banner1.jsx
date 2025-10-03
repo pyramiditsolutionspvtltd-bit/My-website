@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import pyramitVideo from '/src/assets/Video_Generation_For_Pyramid_IT.mp4';
+import pyramitVideo from '../assets/Video_Generation_For_Pyramid_IT .mp4';
 
 const Banner1 = ({heart_pulse_orange2, heart_pulse_orange}) => {
     return (
@@ -172,5 +172,6 @@ Banner1.propTypes = {
     heart_pulse_orange2: PropTypes.string,
     heart_pulse_orange: PropTypes.string,
 };
+
 
 export default Banner1;
