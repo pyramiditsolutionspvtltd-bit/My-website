@@ -9,7 +9,7 @@ export const servicesData = {
     description: 'Comprehensive networking solutions for seamless connectivity and communication across your organization.',
     fullDescription: 'Networking being the backbone of every organization today, at Pyramid IT Solutions we ensure that networking solutions we provide to our customers are future ready. We have robust end-to-end Networking solutions portfolio and are committed in delivering advanced Networking solutions to SMB, Large Enterprise network and Data Centres. We Design new solutions for your business requirements, based on best practice designs and templates that are aligned to multi-vendor technology architectures.',
     quote: '“From wired networks to wireless innovations, we build secure, scalable and future-ready solutions that help businesses to stay connected anytime, anywhere”.',
-    imageUrl: '..src/assets/images/services/Networking_Internetworking.jpg',
+    imageUrl: '../src/assets/images/services/Networking_Internetworking.jpg',
     features: [
       'Network Design & Architecture',
       'LAN/WAN Implementation',
@@ -1104,6 +1104,7 @@ export const getServiceCategories = () => {
   const categories = [...new Set(Object.values(servicesData).map(service => service.category))];
   return categories;
 };
+
 
 
 
