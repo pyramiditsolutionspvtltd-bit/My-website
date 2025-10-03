@@ -86,7 +86,7 @@ const ContactUs = () => {
                                             </div>
                                             <div className="rs-info-contact">
                                                 <span>Email Us</span>
-                                                <h5 className="title"><Link to="mailto:info@support.com">pyramiditsolutionspvtltd@gmail.com</Link></h5>
+                                                <h5 className="title"><Link to="mailto:info@support.com">pyramiditsolutions@gmail.com</Link></h5>
                                             </div>
                                         </div>
                                     </div>
@@ -186,5 +186,6 @@ const ContactUs = () => {
         </div>
     );
 };
+
 
 export default ContactUs;
