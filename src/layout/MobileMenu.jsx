@@ -77,9 +77,7 @@ const MobileMenu = ({ canvasLogo, isOnepage }) => {
                             <Link to="/" className="active" onClick={handleCloseMenu}>Home</Link>
   
                         </li>
-                        <li>
-                            <Link to="/about" onClick={handleCloseMenu}>About</Link>
-                        </li>
+                       
                         <li>
                             <Link to="/about" onClick={handleCloseMenu}>About</Link>
                         </li>
