@@ -103,7 +103,7 @@ const MenuItems = ({firstLvlMenu, secondLvlMenu}) => {
                                 <Link to="/service/audio-video-integration" className={location.pathname === "/service/audio-video-integration" ? "active" : ""}>Audio Video Integration</Link>
                             </li>
                             <li>
-                                <Link to="/service/wireless-solutions" className={location.pathname === "/service/wireless-solutions" ? "active" : ""}>Wireless Solutions</Link>
+                                <Link to="/service/wireless-solutions" className={location.pathname === "/service/wireless-solutions" ? "active" : ""}> Network Solution</Link>
                             </li>
                             <li>
                                 <Link to="/service/ip-surveillance" className={location.pathname === "/service/ip-surveillance" ? "active" : ""}>IP Surveillance</Link>
@@ -128,9 +128,7 @@ const MenuItems = ({firstLvlMenu, secondLvlMenu}) => {
                             <li>
                                 <Link to="/service/structured-cabling" className={location.pathname === "/service/structured-cabling" ? "active" : ""}>Structured Cabling</Link>
                             </li>
-                            <li>
-                                <Link to="/service/utp-cabling" className={location.pathname === "/service/utp-cabling" ? "active" : ""}>UTP Cabling</Link>
-                            </li>
+                            
                         </ul>
                     </li>
                         
