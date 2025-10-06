@@ -80,10 +80,6 @@ const MobileMenu = ({ canvasLogo, isOnepage }) => {
                         <li>
                             <Link to="/about" onClick={handleCloseMenu}>About</Link>
                         </li>
-                        <li className="has-clid relative">
-                            <Link to="/services" onClick={handleCloseMenu}>Services</Link>
-  
-                        </li>
                         <li>
                             <Link to="/about" onClick={handleCloseMenu}>About</Link>
                         </li>
@@ -91,7 +87,6 @@ const MobileMenu = ({ canvasLogo, isOnepage }) => {
                             <Link to="/services" onClick={handleCloseMenu}>Services</Link>
                             <ul className="sub-menu">
                                 <li className="has-clid">
-                                    <Link to="/service-details" onClick={handleCloseMenu}>IT Services</Link>
                                     <Link to="/service-details" onClick={handleCloseMenu}>IT Services</Link>
                                     <ul className="sub-menu">
                                         <li>
@@ -134,7 +129,6 @@ const MobileMenu = ({ canvasLogo, isOnepage }) => {
                                 </li>
                                 <li className="has-clid">
                                     <Link to="/service-details" onClick={handleCloseMenu}>Cloud Computing</Link>
-                                    <Link to="/service-details" onClick={handleCloseMenu}>Cloud Computing</Link>
                                     <ul className="sub-menu">
                                         <li>
                                                                         <Link to="/service/unified-computing" onClick={handleCloseMenu} className={location.pathname === "/service/unified-computing" ? "active" : ""}>Unified Computing</Link>
@@ -161,9 +155,6 @@ const MobileMenu = ({ canvasLogo, isOnepage }) => {
                                                                     </li>
                                     </ul>
                                 </li>
-                                 <li className="has-clid">
-                                    <Link to="/service-details" onClick={handleCloseMenu}>Network</Link>
-                                    </li>
                                  <li className="has-clid">
                                     <Link to="/service-details" onClick={handleCloseMenu}>Network</Link>
                                     <ul className="sub-menu">
