@@ -53,7 +53,7 @@ Faq.propTypes = {
     faq_left_img: PropTypes.string,
     couple_ball_layer: PropTypes.string,
     addClass: PropTypes.string,
-    activeItem: PropTypes.string,
+    activeItem: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     itemsArray: PropTypes.array,
 };
 
