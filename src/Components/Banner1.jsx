@@ -149,11 +149,11 @@ const Banner1 = ({heart_pulse_orange2, heart_pulse_orange}) => {
                     <div className="col-lg-2"></div>
                     <div className="col-lg-8">
                         <div className="rs-banner-2__content">
-                            <div className="rs-sub-heading wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.4s">
+                            {/*<div className="rs-sub-heading wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.4s">
                                 <img src={heart_pulse_orange2} alt=""/>
                                     <span>Welcome To Pyraramid IT Solutions</span>
                                     <img src={heart_pulse_orange} alt=""/>
-                                    </div>
+                                    </div>*/}
                                     <h1 className="title wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.8s" style={{letterSpacing: '-0.05em'}}>
                                         Driving Innovations Through Intelligent<span> Networks</span>
                                     </h1>
@@ -175,4 +175,5 @@ Banner1.propTypes = {
 
 
 export default Banner1;
+
 
