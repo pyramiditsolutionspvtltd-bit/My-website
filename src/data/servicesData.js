@@ -673,7 +673,7 @@ export const servicesData = {
 
 ,
     quote: 'Next-generation surveillance powered by cloud intelligence and analytics.',
-  imageUrl: '/images/services/IP Surveillance.jpg',
+  imageUrl: IP_Surveillance,
     features: [
       'Cloud Video Management',
       'AI-Powered Analytics',
