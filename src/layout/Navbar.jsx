@@ -49,6 +49,8 @@ const Navbar = ({ normalLogo, stickyLogo, canvasLogo, layout, phone, container, 
         <>
             <div className={`full-width-header ${layout || 'rs-header-layout2'}`}>
                 <header id="rs-header" className="rs-header">
+                    {/* Top nav bar hidden by default. To show, wrap this block in a condition or remove comment. */}
+                    {/*
                     {layout === 'rs-header-layout2' && (
                          <div className="rs-header-topber">
                             <div className="container">
@@ -89,6 +91,7 @@ const Navbar = ({ normalLogo, stickyLogo, canvasLogo, layout, phone, container, 
                             </div>
                         </div> 
                     )}
+                    */}
 
                     {layout === 'rs-header-layout-3' && (
                         <div className="rs-header-topber">
