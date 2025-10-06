@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import pyramitVideo from '../assets/Video_Generation_For_Pyramid_IT .mp4';
+import excellenceLogo from '../assets/images/20-years-excellence.png';
 
 const Banner1 = ({heart_pulse_orange2, heart_pulse_orange}) => {
     return (
@@ -75,7 +76,7 @@ const Banner1 = ({heart_pulse_orange2, heart_pulse_orange}) => {
                 }}
             >
                 <img 
-                    src="/src/assets/images/20-years-excellence.png" 
+                    src={excellenceLogo} 
                     alt="20 Years of Excellence" 
                     style={{
                         width: '180px',
