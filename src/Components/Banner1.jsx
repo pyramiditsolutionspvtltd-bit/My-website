@@ -157,7 +157,7 @@ const Banner1 = ({heart_pulse_orange2, heart_pulse_orange}) => {
                                     <h1 className="title wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.8s" style={{letterSpacing: '-0.05em'}}>
                                         Driving Innovations Through Intelligent<span> Networks</span>
                                     </h1>
-                                    <p className="wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.2s">Enabling businesses with integrated, secure and scalable networking solutions that drives transformation and fuel growth in a digitally connected world</p>
+                                    <p className="wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.2s">To empower organizations through intelligent, secure, and scalable network solutions that accelerate digital transformation and sustainable growth.</p>
                                     <Link className="main-btn wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.6s" to="/services">Discover More <i className="ri-arrow-right-fill"></i></Link>
                             </div>
                         </div>
@@ -175,3 +175,4 @@ Banner1.propTypes = {
 
 
 export default Banner1;
+
