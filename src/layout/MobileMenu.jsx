@@ -163,6 +163,7 @@ const MobileMenu = ({ canvasLogo, isOnepage }) => {
                                 </li>
                                  <li className="has-clid">
                                     <Link to="/service-details" onClick={handleCloseMenu}>Network</Link>
+                                    </li>
                                  <li className="has-clid">
                                     <Link to="/service-details" onClick={handleCloseMenu}>Network</Link>
                                     <ul className="sub-menu">
