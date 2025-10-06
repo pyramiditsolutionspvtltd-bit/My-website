@@ -75,36 +75,7 @@ const MobileMenu = ({ canvasLogo, isOnepage }) => {
                     <>
                         <li className="has-clid relative">
                             <Link to="/" className="active" onClick={handleCloseMenu}>Home</Link>
-                            <ul className="sub-menu">
-                                <li className="has-clid">
-                                    <Link className="active" to="/" onClick={handleCloseMenu}>Multipage</Link>
-                                    <ul className="sub-menu">
-                                        <li>
-                                            <Link className="active" to="/" onClick={handleCloseMenu}>Home 01</Link>
-                                        </li>
-                                        <li>
-                                            <Link to="/home-2" onClick={handleCloseMenu}>Home 02</Link>
-                                        </li>
-                                        <li>
-                                            <Link to="/home-3" onClick={handleCloseMenu}>Home 03</Link>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li className="has-clid">
-                                    <Link to="/one-page-home-1" onClick={handleCloseMenu}>Onepage</Link>
-                                    <ul className="sub-menu">
-                                        <li>
-                                            <Link to='/one-page-home-1' onClick={handleCloseMenu}>Onepage 01</Link>
-                                        </li>
-                                        <li>
-                                            <Link to='/one-page-home-2' onClick={handleCloseMenu}>Onepage 02</Link>
-                                        </li>
-                                        <li>
-                                            <Link to='/one-page-home-3' onClick={handleCloseMenu}>Onepage 03</Link>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
+  
                         </li>
                         <li>
                             <Link to="/about" onClick={handleCloseMenu}>About</Link>
@@ -112,28 +83,98 @@ const MobileMenu = ({ canvasLogo, isOnepage }) => {
                         <li className="has-clid relative">
                             <Link to="/services" onClick={handleCloseMenu}>Services</Link>
                             <ul className="sub-menu">
-                                <li>
-                                    <Link to="/services" onClick={handleCloseMenu}>Service Style 01</Link>
-                                </li>
-                                <li>
-                                    <Link to="/services-2" onClick={handleCloseMenu}>Service Style 02</Link>
-                                </li>
                                 <li className="has-clid">
-                                    <Link to="/service-details" onClick={handleCloseMenu}>Service Details</Link>
+                                    <Link to="/service-details" onClick={handleCloseMenu}>IT Services</Link>
                                     <ul className="sub-menu">
                                         <li>
-                                            <Link to="/service-details" onClick={handleCloseMenu}>Service Details Style 01</Link>
-                                        </li>
+                                                                       <Link to="/service/networking-internetworking" className={location.pathname === "/service/networking-internetworking" ? "active" : ""}>Networking & Internetworking</Link>
+                                                                   </li>
+                                                                   <li>
+                                                                       <Link to="/service/security-services-av-va" className={location.pathname === "/service/security-services-av-va" ? "active" : ""}>Security Services (AV / VA)</Link>
+                                                                   </li>
+                                                                   <li>
+                                                                       <Link to="/service/cyber-security" className={location.pathname === "/service/cyber-security" ? "active" : ""}>Cyber Security</Link>
+                                                                   </li>
+                                                                   <li>
+                                                                       <Link to="/service/audio-video-integration" className={location.pathname === "/service/audio-video-integration" ? "active" : ""}>Audio Video Integration</Link>
+                                                                   </li>
+                                                                   <li>
+                                                                       <Link to="/service/wireless-solutions" className={location.pathname === "/service/wireless-solutions" ? "active" : ""}> Network Solution</Link>
+                                                                   </li>
+                                                                   <li>
+                                                                       <Link to="/service/ip-surveillance" className={location.pathname === "/service/ip-surveillance" ? "active" : ""}>IP Surveillance</Link>
+                                                                   </li>
+                                                                    <li>
+                                                                       <Link to="/service/unified-communications" className={location.pathname === "/service/unified-communications" ? "active" : ""}>Unified Communications</Link>
+                                                                   </li>
+                                                                    <li>
+                                                                       <Link to="/service/vulnerability-assessment-antivirus" className={location.pathname === "/service/vulnerability-assessment-antivirus" ? "active" : ""}>Vulnerability Assessment & Anti Virus Management</Link>
+                                                                   </li>
+                                                                    <li>
+                                                                       <Link to="/service/ftth-fiber-to-home" className={location.pathname === "/service/ftth-fiber-to-home" ? "active" : ""}>FTTH (Fiber To The Home)</Link>
+                                                                   </li>
+                                    </ul>
+                                </li>
+                                 <li className="has-clid">
+                                    <Link to="/service-details" onClick={handleCloseMenu}>Structured Cabling</Link>
+                                    <ul className="sub-menu">
                                         <li>
-                                            <Link to="/service-details-2" onClick={handleCloseMenu}>Service Details Style 02</Link>
-                                        </li>
+                                                                       <Link to="/service/structured-cabling" className={location.pathname === "/service/structured-cabling" ? "active" : ""}>Structured Cabling</Link>
+                                                                   </li>
+                                        
+                                    </ul>
+                                </li>
+                                <li className="has-clid">
+                                    <Link to="/service-details" onClick={handleCloseMenu}>Cloud Computing</Link>
+                                    <ul className="sub-menu">
                                         <li>
-                                            <Link to="/service-details-3" onClick={handleCloseMenu}>Service Details Style 03</Link>
-                                        </li>
+                                                                        <Link to="/service/unified-computing" className={location.pathname === "/service/unified-computing" ? "active" : ""}>Unified Computing</Link>
+                                                                    </li>
+                                                                    <li>
+                                                                        <Link to="/service/internet-of-things-iot" className={location.pathname === "/service/internet-of-things-iot" ? "active" : ""}>Internet of Things (IOT)</Link>
+                                                                    </li>
+                                                                    <li>
+                                                                        <Link to="/service/ip-surveillance-cloud" className={location.pathname === "/service/ip-surveillance-cloud" ? "active" : ""}>IP Surveillance</Link>
+                                                                    </li>
+                                    </ul>
+                                </li>
+                                 <li className="has-clid">
+                                    <Link to="/service-details" onClick={handleCloseMenu}>Professional Services</Link>
+                                    <ul className="sub-menu">
+                                         <li>
+                                                                        <Link to="/service/it-itil-consulting" className={location.pathname === "/service/it-itil-consulting" ? "active" : ""}>IT (ITIL) Consulting Services</Link>
+                                                                    </li>
+                                                                    <li>
+                                                                        <Link to="/service/it-risk-assessment" className={location.pathname === "/service/it-risk-assessment" ? "active" : ""}>IT Risk Assessment</Link>
+                                                                    </li>
+                                                                     <li>
+                                                                        <Link to="/service/it-assessment" className={location.pathname === "/service/it-assessment" ? "active" : ""}>IT Assessment</Link>
+                                                                    </li>
+                                    </ul>
+                                </li>
+                                 <li className="has-clid">
+                                    <Link to="/service-details" onClick={handleCloseMenu}>Network</Link>
+                                    <ul className="sub-menu">
+                                        <li>
+                                                                       <Link to="/service/lan-network" className={location.pathname === "/service/lan-network" ? "active" : ""}>LAN</Link>
+                                                                   </li>
+                                                                   <li>
+                                                                       <Link to="/service/wlan-network" className={location.pathname === "/service/wlan-network" ? "active" : ""}>WLAN</Link>
+                                                                   </li>
+                                                                   <li>
+                                                                       <Link to="/service/wan-network" className={location.pathname === "/service/wan-network" ? "active" : ""}>WAN</Link>
+                                                                   </li>
+                                                                   <li>
+                                                                       <Link to="/service/data-center-network" className={location.pathname === "/service/data-center-network" ? "active" : ""}>Data Center</Link>
+                                                                   </li>
+                                                                   <li>
+                                                                       <Link to="/service/gpon-network" className={location.pathname === "/service/gpon-network" ? "active" : ""}>GPON</Link>
+                                                                   </li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
+                        
                         <li className="has-clid relative">
                             <Link to="/our-projects" onClick={handleCloseMenu}>Pages</Link>
                             <ul className="sub-menu">
