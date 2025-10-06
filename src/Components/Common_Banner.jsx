@@ -11,7 +11,7 @@ const Common_Banner = ({pageName}) => {
                     <div className="rs-page-banner__content">
                         <h1 className="title">{pageName}</h1>
                         <ul>
-                            <li><i className="ri-home-wifi-line"></i> <Link to="#">Home</Link></li>
+                            <li><i className="ri-home-wifi-line"></i> <Link to="/">Home</Link></li>
                             <li><i className="ri-arrow-right-fill"></i>{pageName}</li>
                         </ul>
                     </div>
