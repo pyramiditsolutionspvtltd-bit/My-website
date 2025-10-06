@@ -1,5 +1,5 @@
 ﻿import 'bootstrap/dist/css/bootstrap.min.css';
-import 'remixicon/fonts/remixicon.css';
+import 'remixicon/fonts/remixicon.css?inline';
 import '../src/assets/scss/slick.min.scss';
 import '../src/assets/scss/rs-spacing.scss';
 import '../src/assets/scss/style.scss';
