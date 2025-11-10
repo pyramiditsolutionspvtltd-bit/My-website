@@ -1,0 +1,691 @@
+// Comprehe    quote: '"From wired networks to wireless innovations, we build secure, scalable and future-ready solutions that help businesses to stay connected anytime, anywhere".',  quote: '"From wired networks to wireless innovations, we build secure, scalable and future-ready solutions that help businesses to stay connected anytime, anywhere".',  quote: 'From wired networks to wireless innovations, we build secure, scalable and future-ready solutions that help businesses to stay connected anytime, anywhere.',ive IT Services Data
+export const servicesData = {
+
+  // IT Services Sub-menu
+  'networking-internetworking': {
+    id: 'networking-internetworking',
+    title: 'Networking & Internetworking',
+    category: 'IT Services',
+    description: 'Comprehensive networking solutions for seamless connectivity and communication across your organization.',
+    fullDescription: 'Networking being the backbone of every organization today, at Pyramid IT Solutions we ensure that networking solutions we provide to our customers are future ready. We have robust end-to-end Networking solutions portfolio and are committed in delivering advanced Networking solutions to SMB, Large Enterprise network and Data Centres. We Design new solutions for your business requirements, based on best practice designs and templates that are aligned to multi-vendor technology architectures.',
+
+    quote: 'Next-generation surveillance powered by cloud intelligence and analytics.',g the backbone of every organization today, at Pyramid IT Solutions we ensure that networking solutions we provide to our customers are future ready. We have robust end-to-end Networking solutions portfolio and are committed in delivering advanced Networking solutions to SMB, Large Enterprise network and Data Centres. We Design new solutions for your business requirements, based on best practice designs and templates that are aligned to multi-vendor technology architectures.',
+    quote: '“From wired networks to wireless innovations, we build secure, scalable and future-ready solutions that help businesses to stay connected anytime, anywhere”.',
+    imageUrl: '../assets/images/services/Networking_Internetworking.jpg',
+    features: [
+      'Network Design & Architecture',
+      'LAN/WAN Implementation',
+      'Router & Switch Configuration',
+      'Network Monitoring & Management',
+      'Performance Optimization',
+      'Redundancy & Failover Solutions'
+    ],
+    benefits: [
+      'Improved network performance and reliability',
+      'Scalable infrastructure for business growth',
+      'Enhanced security and data protection',
+      'Reduced downtime and maintenance costs'
+    ],
+    technicalSpecs: [
+      'Cisco, Juniper, HPE network equipment',
+      'OSPF, BGP routing protocols',
+      'VLAN and QoS configuration',
+      '24/7 network monitoring and support'
+    ]
+  },
+
+  'security-services-av-va': {
+    id: 'security-services-av-va',
+    title: 'Security Services (AV / VA)',
+    category: 'IT Services',
+    description: 'Advanced antivirus and vulnerability assessment services to protect your digital infrastructure.',
+    fullDescription: 'Today’s cyber security landscape demands a comprehensive and integrated approach to ensure the integrity of networks, endpoints, devices and data. Email and web usage has become way of life. It has become an important aspect of every organization as enterprises use email for their primary communications – internal & external. Hourly disruptions to electronic communications due to viruses, spam, Trojans, spyware, phishing and other email-based threats is very common Malicious malware and other attacks are also creating havoc on today’s businesses. Over the years, these attacks have evolved from random hacking incidents to criminal acts. Clean-up is extremely difficult and costly. The data breaches & leakage is an additional concern. Pyramids provide comprehensive network security solution according to the nature of business and applications being used by customers..',
+    
+    quote: 'In a world full of risks and threats, Pyramid IT creates a safer digital environment where every business can focus growth, while we keep an eye on their critical systems and data',
+    imageUrl: '../src/assets/images/services/Security Services (AV - VA).jpg',
+    features: [
+      'Enterprise Antivirus Solutions',
+      'Vulnerability Assessment & Scanning',
+      'Threat Detection & Response',
+      'Security Policy Implementation',
+      'Risk Assessment & Mitigation',
+      'Compliance Monitoring'
+    ],
+    benefits: [
+      'Proactive threat protection',
+      'Reduced security vulnerabilities',
+      'Compliance with industry standards',
+      'Enhanced data security and privacy'
+    ],
+    technicalSpecs: [
+      'Symantec, McAfee, Kaspersky solutions',
+      'Nessus, OpenVAS vulnerability scanners',
+      'SIEM integration and monitoring',
+      'Automated patch management systems'
+    ]
+  },
+
+  'cyber-security': {
+    id: 'cyber-security',
+    title: 'Cyber Security',
+    category: 'IT Services',
+    description: 'Comprehensive cybersecurity solutions to protect against sophisticated cyber threats and attacks.',
+    fullDescription: 'In today’s digital world, cyber threats are evolving faster than ever. At Pyramid IT Solutions, we understand that your business’s most asset is its data. That’s why we provide comprehensive cybersecurity services designed to protect your networks, systems, and sensitive information from potential threats Our approach combines advanced technology, expert strategies, and proactive monitoring to ensure your business stays secure and compliant. From small businesses to large enterprises, we tailor our solutions to meet the unique needs of every organization.',
+    quote: 'Your business deserves security that never rests — Pyramid IT delivers end-to-end cybersecurity solutions that keep your systems, people, and data safe around the clock.',
+    imageUrl: '../src/assets/images/services/Cyber Security.jpg',
+    features: [
+      'Firewall Configuration & Management',
+      'Intrusion Detection Systems',
+      'Security Information Event Management',
+      'Incident Response Planning',
+      'Security Awareness Training',
+      'Penetration Testing'
+    ],
+    benefits: [
+      'Advanced threat protection',
+      'Rapid incident response',
+      'Regulatory compliance assurance',
+      'Business continuity protection'
+    ],
+    technicalSpecs: [
+      'Next-generation firewalls (NGFW)',
+      'SIEM platforms and analytics',
+      'Multi-factor authentication systems',
+      'Endpoint detection and response (EDR)'
+    ]
+  },
+
+  'audio-video-integration': {
+    id: 'audio-video-integration',
+    title: 'Audio Video Integration',
+    category: 'IT Services',
+    description: 'Professional audio-visual integration solutions for modern business communication and presentation needs.',
+    fullDescription: 'In today’s business and entertainment environment, clear communication and immersive experiences are essential. Pyramid IT Solutions offers professional audio-video integration services that bring together cutting-edge technology, seamless design, and expert installation to create powerful AV systems for your spaces. Whether it’s a corporate boardroom, educational facility, conference hall, or entertainment venue, our solutions transform the way you connect, communicate, and engage..',
+    quote: 'From boardrooms to auditoriums, we integrate audio and video systems that empower businesses, engage audiences, and simplify operations.',
+    imageUrl: '../src/assets/images/services/Audio Video Integration.jpg',
+    features: [
+      'Conference Room AV Setup',
+      'Digital Signage Solutions',
+      'Video Conferencing Systems',
+      'Sound System Installation',
+      'Interactive Display Solutions',
+      'AV Control Systems'
+    ],
+    benefits: [
+      'Enhanced meeting productivity',
+      'Professional presentation capabilities',
+      'Improved communication efficiency',
+      'Scalable AV infrastructure'
+    ],
+    technicalSpecs: [
+      'Crestron, AMX control systems',
+      '4K video distribution systems',
+      'Cisco, Polycom video conferencing',
+      'Professional audio processing equipment'
+    ]
+  },
+
+  'wireless-solutions': {
+    id: 'wireless-solutions',
+    title: 'Wireless Solutions',
+    category: 'IT Services',
+    description: 'Advanced wireless networking solutions for mobility and connectivity across your organization.',
+    fullDescription: 'The present-day workplace demands mobility, speed and reliability-and that’s exactly what Pyramid IT Solutions come up with Wireless Solutions. From the small offices to the large enterprises, we design and implement secure, high performance wireless networks that keep your business connected without having any limits.We very well know that connectivity is the backbone of productivity. So does our wireless solutions ensures you a flawless communication, data sharing, and collaboration across teams, devices, and locations. And this helps your workforce stay align in today’s dynamic digital world.',
+    quote: 'From office networks to large-scale operations, Pyramid IT Wireless Solutions provide reliable, high-speed connectivity that drives efficiency and growth.',
+    imageUrl: '../src/assets/images/services/Wireless Solutions.jpg',
+    features: [
+      'WiFi Network Design',
+      'Wireless Site Survey',
+      'Access Point Installation',
+      'Wireless Security Implementation',
+      'Guest Network Setup',
+      'Wireless Performance Monitoring'
+    ],
+    benefits: [
+      'Seamless mobile connectivity',
+      'Improved employee productivity',
+      'Secure wireless access',
+      'Scalable wireless infrastructure'
+    ],
+    technicalSpecs: [
+      'WiFi 6 (802.11ax) technology',
+      'Cisco, Aruba wireless controllers',
+      'WPA3 security protocols',
+      'Cloud-managed wireless solutions'
+    ]
+  },
+
+  'ip-surveillance': {
+    id: 'ip-surveillance',
+    title: 'IP Surveillance',
+    category: 'IT Services',
+    description: 'Advanced IP-based surveillance systems for comprehensive security monitoring and protection.',
+    fullDescription: 'Security in today’s world is quite critical, businesses need smarter ways to protect their people, assets, and specially data. Therefore, in Pyramid IT Solutions we provide advance IP Surveillance Solutions that go beyond any simple and traditional security systems while offering intelligent, reliable and scalable monitoring for modern enterprises.Our IP-based surveillance solutions integrate high-definition cameras, analytics, and centralized management to offer you real time visibility and control over your environment.',
+    quote: 'Your security is our priority — with Pyramid IT IP surveillance, you gain reliable, scalable, and intelligent systems that protect your business and people without compromise.',
+    imageUrl: '../src/assets/images/services/IP Surveillance.jpg',
+    features: [
+      'HD IP Camera Installation',
+      'Video Management Systems',
+      'Motion Detection & Analytics',
+      'Remote Monitoring Capabilities',
+      'Video Storage Solutions',
+      'Access Control Integration'
+    ],
+    benefits: [
+      'Enhanced security monitoring',
+      'Remote surveillance capabilities',
+      'Intelligent video analytics',
+      'Scalable surveillance infrastructure'
+    ],
+    technicalSpecs: [
+      '4K resolution IP cameras',
+      'Video analytics and AI detection',
+      'Network video recorders (NVR)',
+      'Cloud-based surveillance platforms'
+    ]
+  },
+
+  'unified-communications': {
+    id: 'unified-communications',
+    title: 'Unified Communications',
+    category: 'IT Services',
+    description: 'Integrated communication solutions that unify voice, video, messaging, and collaboration tools.',
+    fullDescription: 'In this rapid digital world, having a seamless communication is not just an advantage, it’s a necessity. And that’s what at Pyramid IT Solutions, we empower businesses with advance Unified Communications (UC) solution combines voice, messaging, conferencing and collaboration tools into a single, integrated platform. We intent to eliminate the complication of scattered communication systems, and make sure your teams stay connected-anytime, anywhere, on any device. Pyramid IT Solutions tends to provide a secure and scalable UC framework that enhances collaboration and boosts productivity, and lets your workforce work whether remotely, from the office or in a hybrid mode.',
+    quote: 'From video conferencing to instant messaging, Pyramid IT ensures every conversation is connected, secure, and efficient, helping your business operate seamlessly in a digital world',
+    imageUrl: '../src/assets/images/services/Unified Communications.jpg',
+    features: [
+      'VoIP Phone Systems',
+      'Video Conferencing Integration',
+      'Instant Messaging Platforms',
+      'Presence Management',
+      'Mobile UC Applications',
+      'Call Center Solutions'
+    ],
+    benefits: [
+      'Streamlined communication processes',
+      'Improved team collaboration',
+      'Reduced communication costs',
+      'Enhanced customer service capabilities'
+    ],
+    technicalSpecs: [
+      'Microsoft Teams, Cisco Webex integration',
+      'SIP-based telephony systems',
+      'Cloud and on-premise deployment',
+      'Mobile and desktop UC clients'
+    ]
+  },
+
+  'vulnerability-assessment-antivirus': {
+    id: 'vulnerability-assessment-antivirus',
+    title: 'Vulnerability Assessment & Anti Virus Management',
+    category: 'IT Services',
+    description: 'Comprehensive vulnerability assessment and enterprise antivirus management for robust security protection.',
+    fullDescription: 'Under Vulnerability Assessment we identify Information assets in the organization and determine the criticality and value to the organization. This will enable us to keep the assets at required protection levels. Our proactive assessment of IT infrastructure enables us to assess the security posture of the IT assets.',
+    quote: 'From risk detection to real-time threat prevention, Pyramid IT delivers comprehensive solutions that ensure your business systems are always secure, compliant, and resilient',
+    imageUrl: '../src/assets/images/services/Vulnerability Assessment & Anti Virus Management.jpg',
+    features: [
+      'Regular Vulnerability Scans',
+      'Centralized Antivirus Management',
+      'Security Risk Assessment',
+      'Patch Management',
+      'Compliance Reporting',
+      'Threat Intelligence Integration'
+    ],
+    benefits: [
+      'Proactive threat identification',
+      'Centralized security management',
+      'Reduced security vulnerabilities',
+      'Enhanced compliance posture'
+    ],
+    technicalSpecs: [
+      'Enterprise antivirus solutions',
+      'Automated vulnerability scanners',
+      'Security information and event management',
+      'Centralized policy management systems'
+    ]
+  },
+
+  'ftth-fiber-to-home': {
+    id: 'ftth-fiber-to-home',
+    title: 'FTTH (Fiber To The Home)',
+    category: 'IT Services',
+    description: 'High-speed fiber optic connectivity solutions bringing ultra-fast internet directly to your location.',
+    fullDescription: 'Fiber to the home (FTTH), also called “fibre to the premises” (FTTP), is the installation and use of optical fibre from a central point directly to individual buildings such as residences, apartment buildings and businesses to provide unprecedented high-speed Internet access. FTTH dramatically increases the connection speeds available to computer users compared with technologies now used in most places.While FTTH promises connection speeds of up to 100 megabits per second (Mbps) — 20 to 100 times as fast as a typical cable modem or DSL (Digital Subscriber Line) connection — implementing FTTH on a large scale will be costly because it will require installation of new cable sets over the “last links” from existing optical fibre cables to individual users. Some communities currently enjoy “fibre to the curb” (FTTC) service, which refers to the installation and use of optical fibre cable to the curbs near homes or businesses, with a “copper” medium carrying the signals between the curb and the end usersPyramid aims at serving a one-stop complete set of solution for FTTH. We are proudly saying that we have successfully completed for “Abra” with 400 Flats and currently we are executing this technology for 2046 Flats in Hyderabad. Connectivity is no longer a luxury in this fast-paced dynamic world, rather it has become a necessity for everyone. With the rise of demand for high-speed internet, smart home applications, cloud-based services, and integrated streaming, traditional broadband connections often disappoint.But at Pyramid IT Solutions we narrow the gap with our state-of-the-art FTTH (Fiber to the Home) solutions that brings in hyper-fast-internet connectivity and unmatched reliability directly to your doorway.',
+    quote: 'Experience uninterrupted high-speed internet with Pyramid IT FTTH, bringing blazing-fast fibre connections that keep your family, work, and entertainment always connected.',
+    imageUrl: '../src/assets/images/services/FTTH (Fiber To The Home).jpg',
+    features: [
+      'Fiber Optic Installation',
+      'High-Speed Internet Connectivity',
+      'Gigabit Ethernet Services',
+      'Fiber Network Design',
+      'Last Mile Connectivity',
+      'Fiber Maintenance & Support'
+    ],
+    benefits: [
+      'Ultra-high-speed internet access',
+      'Reliable fiber optic connectivity',
+      'Future-proof infrastructure',
+      'Enhanced bandwidth capabilities'
+    ],
+    technicalSpecs: [
+      'Single-mode and multi-mode fiber',
+      'GPON and EPON technologies',
+      'Gigabit Ethernet over fiber',
+      'Fiber optic splicing and termination'
+    ]
+  },
+
+  // Structured Cabling Sub-menu
+  'structured-cabling': {
+    id: 'structured-cabling',
+    title: 'Structured Cabling',
+    category: 'Structured Cabling',
+    description: 'Professional structured cabling solutions for organized and efficient network infrastructure.',
+    fullDescription: 'Structured Cabling is a set of standards that determine how to wire connect the IT Infrastructure in a data centre, office or building for data or voice communications, typically using Fiber, Category 5 or Category 6 cable and modular sockets. We pioneer in this area of structured cabling with 20+ years of IT design and implementation expertise. Our highly experienced cabling team has extensive experience in coordinating small single site jobs to large turnkey projects. We are proud of the quality of service that we deliver and will ensure that the cabling project is completed with desired industry standards and on time.',
+    quote: 'From planning to installation, Pyramid IT delivers structured cabling solutions that create a strong, future-ready foundation for your enterprise networks, data centers, and communication systems.',
+    imageUrl: '../src/assets/images/services/Structured Cabling.jpg',
+    features: [
+      'Cat6/Cat6A Cable Installation',
+      'Fiber Optic Cabling',
+      'Patch Panel Configuration',
+      'Cable Management Systems',
+      'Testing & Certification',
+      'Documentation & Labeling'
+    ],
+    benefits: [
+      'Organized cable infrastructure',
+      'Future-proof network foundation',
+      'Reduced maintenance complexity',
+      'Enhanced network performance'
+    ],
+    technicalSpecs: [
+      'Category 6A cabling standards',
+      'TIA/EIA-568 compliance',
+      'Fiber optic termination',
+      'Professional cable testing equipment'
+    ]
+  },
+
+  'utp-cabling': {
+    id: 'utp-cabling',
+    title: 'UTP Cabling',
+    category: 'Structured Cabling',
+    description: 'Unshielded Twisted Pair (UTP) cabling solutions for reliable data transmission in network infrastructure.',
+    fullDescription: 'A strong IT infrastructure is nothing without the right foundation, and that foundation is structured cabling. At Pyramid IT Solutions, we specialize in providing reliable and high-performance Unshielded Twisted Pair (UTP) Cabling Solutions that form the backbone of your business network.Our UTP Cabling Solutions makes sure that you get a seamless data, voice, and video transmission across your organization, enabling efficient commun9cation and collaboration. The structured cabling systems supports today’s needs while preparing your business future ready and is designed with scalability and flexibility.',
+    quote: 'Build stronger, smarter networks with Pyramid IT’s UTP cabling solutions — designed for efficiency, flexibility, and long-term performance',
+    imageUrl: '../src/assets/images/services/UTP Cabling.jpg',
+    features: [
+      'Cat5e/Cat6 UTP Installation',
+      'Horizontal Cable Runs',
+      'Backbone Cabling',
+      'Patch Cord Management',
+      'Cable Testing & Verification',
+      'Network Jack Installation'
+    ],
+    benefits: [
+      'Cost-effective cabling solution',
+      'Reliable data transmission',
+      'Easy installation and maintenance',
+      'Wide compatibility with network equipment'
+    ],
+    technicalSpecs: [
+      'Category 5e and 6 UTP cables',
+      'RJ45 connector termination',
+      'Horizontal and backbone cabling',
+      'Cable performance testing'
+    ]
+  },
+
+  // Cloud Computing Sub-menu
+  'unified-computing': {
+    id: 'unified-computing',
+    title: 'Unified Computing',
+    category: 'Cloud Computing',
+    description: 'Integrated computing solutions that unify servers, storage, and networking in a single platform.',
+    fullDescription: 'Streamline and revamp your IT ecosystem with the high-speed flexibility and performance that your business commands.In an era where businesses rely heavily on digital transformation, the need for a supple, structured, and secure IT infrastructure has never been greater. Traditional IT—with its separate servers, storage systems, and networking devices—often leads to high costs, inefficiency, and operational silos. This outdated model is no longer an advantage; it’s a roadblock to growth.At Pyramid IT Solutions, we solve this challenge by streamlining your entire IT ecosystem through our Unified Computing Solutions.',
+    quote: 'From servers and storage to networking, Pyramid IT Unified Computing delivers an integrated solution that reduces complexity, maximizes efficiency, and supports business growth',
+    imageUrl: '../src/assets/images/services/Unified Computing.jpg',
+    features: [
+      'Unified Computing Platform',
+      'Converged Infrastructure',
+      'Virtualization Integration',
+      'Centralized Management',
+      'Scalable Architecture',
+      'Resource Pool Management'
+    ],
+    benefits: [
+      'Reduced infrastructure complexity',
+      'Improved operational efficiency',
+      'Lower total cost of ownership',
+      'Enhanced scalability and flexibility'
+    ],
+    technicalSpecs: [
+      'Cisco UCS and HPE Synergy platforms',
+      'VMware and Hyper-V integration',
+      'Centralized management interfaces',
+      'Policy-based automation'
+    ]
+  },
+
+  'internet-of-things-iot': {
+    id: 'internet-of-things-iot',
+    title: 'Internet of Things (IOT)',
+    category: 'Cloud Computing',
+    description: 'IoT solutions connecting devices and systems for enhanced automation and data insights.',
+    fullDescription: 'The Internet of Things (IoT) is transforming the way businesses operate by connecting devices, sensors, and systems to collect, analyze, and act on data in real time. Pyramid IT Solutions offers IoT services that empower organizations to improve efficiency, reduce costs, and deliver smarter experiences for customers and employees.Our IoT solutions combine advanced technology, secure connectivity, and intelligent data analytics to create actionable insights that drive business growth. From industrial automation to smart offices, IoT enables organizations to operate more efficiently and make informed decisions.',
+    quote: 'From smart offices to industrial automation, Pyramid IT IoT Services deliver connected, data-driven solutions that enhance operational efficiency, improve customer experiences, and enable growth',
+    imageUrl: '../src/assets/images/services/Internet of Things (IOT).jpg',
+    features: [
+      'IoT Device Integration',
+      'Sensor Network Deployment',
+      'Data Collection & Analytics',
+      'Cloud IoT Platforms',
+      'Edge Computing Solutions',
+      'IoT Security Implementation'
+    ],
+    benefits: [
+      'Enhanced operational efficiency',
+      'Real-time monitoring and control',
+      'Data-driven decision making',
+      'Automated process optimization'
+    ],
+    technicalSpecs: [
+      'AWS IoT, Azure IoT platform integration',
+      'LoRaWAN, WiFi, cellular connectivity',
+      'Edge computing and analytics',
+      'IoT security and device management'
+    ]
+  },
+
+  'ip-surveillance-cloud': {
+    id: 'ip-surveillance-cloud',
+    title: 'IP Surveillance',
+    category: 'Cloud Computing',
+    description: 'Cloud-based IP surveillance solutions for scalable and intelligent security monitoring.',
+    fullDescription: 'Security in today’s world is quite critical, businesses need smarter ways to protect their people, assets, and specially data. Therefore, in Pyramid IT Solutions we provide advance IP Surveillance Solutions that go beyond any simple and traditional security systems while offering intelligent, reliable and scalable monitoring for modern enterprises Our IP-based surveillance solutions integrate high-definition cameras, analytics, and centralized management to offer you real time visibility and control over your environment.'
+
+
+    quote: 'Next-generation surveillance powered by cloud intelligence and analytics.',
+    imageUrl: '../assets/images/services/IP Surveillance.jpg',
+    features: [
+      'Cloud Video Management',
+      'AI-Powered Analytics',
+      'Remote Monitoring Access',
+      'Scalable Storage Solutions',
+      'Real-time Alerts',
+      'Mobile App Integration'
+    ],
+    benefits: [
+      'Scalable surveillance infrastructure',
+      'Intelligent threat detection',
+      'Remote accessibility and control',
+      'Cost-effective cloud storage'
+    ],
+    technicalSpecs: [
+      'Cloud-based video management systems',
+      'AI and machine learning analytics',
+      'Hybrid cloud and edge deployment',
+      'Mobile and web-based interfaces'
+    ]
+  },
+
+  // Professional Services Sub-menu
+  'it-itil-consulting': {
+    id: 'it-itil-consulting',
+    title: 'IT (ITIL) Consulting Services',
+    category: 'Professional Services',
+    description: 'ITIL-based IT service management consulting to optimize your IT operations and service delivery.',
+    fullDescription: 'In today’s fast-paced digital world, businesses need more than just technology—they need strategic guidance to leverage IT effectively. Pyramid IT Solutions offers professional IT consulting services that help organizations align technology with their business goals, optimize operations, and drive growth.Our consulting approach focuses on understanding your unique business needs, identifying opportunities, and delivering tailored technology solutions that maximize efficiency, minimize risks, and improve overall performance.',
+    quote: 'Optimizing IT operations through proven ITIL best practices and methodologies.',
+    imageUrl: '../src/assets/images/services/IT (ITIL) Consulting Services.jpg',
+    features: [
+      'ITIL Framework Implementation',
+      'Service Catalog Development',
+      'Incident Management Processes',
+      'Change Management Procedures',
+      'Service Level Management',
+      'Continuous Service Improvement'
+    ],
+    benefits: [
+      'Improved IT service quality',
+      'Enhanced operational efficiency',
+      'Better customer satisfaction',
+      'Reduced operational costs'
+    ],
+    technicalSpecs: [
+      'ITIL 4 framework compliance',
+      'ServiceNow, Remedy platform integration',
+      'Process automation and workflows',
+      'KPI and metrics dashboards'
+    ]
+  },
+
+  'it-risk-assessment': {
+    id: 'it-risk-assessment',
+    title: 'IT Risk Assessment',
+    category: 'Professional Services',
+    description: 'Comprehensive IT risk assessment services to identify and mitigate potential security and operational risks.',
+    fullDescription: 'Thorough IT risk assessment services that identify vulnerabilities, assess potential threats, and provide recommendations to mitigate risks across your IT infrastructure.',
+    quote: 'Identifying and mitigating IT risks before they become costly problems.',
+    imageUrl: '../src/assets/images/services/IT Risk Assessment.jpg',
+    features: [
+      'Comprehensive Risk Analysis',
+      'Vulnerability Assessment',
+      'Threat Modeling',
+      'Risk Mitigation Planning',
+      'Compliance Gap Analysis',
+      'Security Policy Review'
+    ],
+    benefits: [
+      'Proactive risk identification',
+      'Enhanced security posture',
+      'Regulatory compliance assurance',
+      'Informed decision making'
+    ],
+    technicalSpecs: [
+      'Risk assessment frameworks (NIST, ISO 27001)',
+      'Vulnerability scanning tools',
+      'Risk management platforms',
+      'Compliance reporting systems'
+    ]
+  },
+
+  'it-assessment': {
+    id: 'it-assessment',
+    title: 'IT Assessment',
+    category: 'Professional Services',
+    description: 'Comprehensive IT infrastructure assessment to evaluate current systems and recommend improvements.',
+    fullDescription: 'Complete IT assessment services that evaluate your current technology infrastructure, identify gaps, and provide strategic recommendations for optimization and modernization.',
+    quote: 'Understanding your IT landscape to build a roadmap for success.',
+    imageUrl: '../src/assets/images/services/IT Assessment.jpg',
+    features: [
+      'Infrastructure Evaluation',
+      'Performance Analysis',
+      'Technology Gap Assessment',
+      'Modernization Roadmap',
+      'Cost-Benefit Analysis',
+      'Strategic Recommendations'
+    ],
+    benefits: [
+      'Clear understanding of IT current state',
+      'Strategic technology roadmap',
+      'Optimized resource allocation',
+      'Improved operational efficiency'
+    ],
+    technicalSpecs: [
+      'Infrastructure monitoring and analysis tools',
+      'Performance benchmarking',
+      'Technology assessment frameworks',
+      'Strategic planning methodologies'
+    ]
+  },
+
+  // Network Sub-menu
+  'lan-network': {
+    id: 'lan-network',
+    title: 'LAN (Local Area Network)',
+    category: 'Network',
+    description: 'Local Area Network solutions for efficient connectivity within your organization.',
+    fullDescription: 'Comprehensive LAN solutions providing high-speed, secure connectivity within your organization. Our LAN services ensure optimal network performance and reliability for all your local networking needs.',
+    quote: 'Building robust local networks that keep your business connected and productive.',
+    imageUrl: '../src/assets/images/services/LAN.jpg',
+    features: [
+      'LAN Design & Implementation',
+      'Switch Configuration',
+      'VLAN Setup & Management',
+      'Network Segmentation',
+      'Quality of Service (QoS)',
+      'Network Monitoring'
+    ],
+    benefits: [
+      'High-speed local connectivity',
+      'Secure network segmentation',
+      'Optimized network performance',
+      'Scalable infrastructure design'
+    ],
+    technicalSpecs: [
+      'Gigabit Ethernet switching',
+      'Layer 2 and Layer 3 switching',
+      'VLAN and QoS configuration',
+      'Network management protocols'
+    ]
+  },
+
+  'wlan-network': {
+    id: 'wlan-network',
+    title: 'WLAN (Wireless Local Area Network)',
+    category: 'Network',
+    description: 'Wireless Local Area Network solutions for flexible and mobile connectivity.',
+    fullDescription: 'Advanced WLAN solutions providing secure, high-performance wireless connectivity throughout your organization. Our wireless networks ensure seamless mobility and productivity.',
+    quote: 'Enabling mobility and flexibility through advanced wireless networking.',
+          imageUrl: '../src/assets/images/services/WLAN.jpg',
+          features: [
+      'Wireless Network Design',
+      'Access Point Deployment',
+      'Wireless Security Implementation',
+      'Roaming Optimization',
+      'Guest Network Setup',
+      'Wireless Performance Monitoring'
+    ],
+    benefits: [
+      'Seamless wireless connectivity',
+      'Enhanced user mobility',
+      'Secure wireless access',
+      'Flexible network expansion'
+    ],
+    technicalSpecs: [
+      'WiFi 6 (802.11ax) technology',
+      'Enterprise wireless controllers',
+      'WPA3 security protocols',
+      'Wireless site survey and planning'
+    ]
+  },
+
+  'wan-network': {
+    id: 'wan-network',
+    title: 'WAN (Wide Area Network)',
+    category: 'Network',
+    description: 'Wide Area Network solutions connecting multiple locations and enabling remote connectivity.',
+    fullDescription: 'Comprehensive WAN solutions that connect your distributed locations, enable remote access, and provide reliable wide-area connectivity for your organization.',
+    quote: 'Connecting distant locations to create one unified, efficient network.',
+    imageUrl: '../src/assets/images/services/WAN.jpg',
+    features: [
+      'WAN Architecture Design',
+      'MPLS Implementation',
+      'VPN Solutions',
+      'SD-WAN Deployment',
+      'Traffic Optimization',
+      'Redundancy & Failover'
+    ],
+    benefits: [
+      'Reliable multi-site connectivity',
+      'Optimized wide-area performance',
+      'Secure remote access',
+      'Cost-effective WAN solutions'
+    ],
+    technicalSpecs: [
+      'MPLS and Internet-based WAN',
+      'SD-WAN orchestration platforms',
+      'VPN concentrators and gateways',
+      'WAN optimization appliances'
+    ]
+  },
+
+  'data-center-network': {
+    id: 'data-center-network',
+    title: 'Data Center',
+    category: 'Network',
+    description: 'Data center networking solutions for high-performance, scalable infrastructure.',
+    fullDescription: 'Advanced data center networking solutions providing high-speed, low-latency connectivity for your critical applications and services with redundancy and scalability.',
+    quote: 'Powering your digital infrastructure with enterprise-grade data center networking.',
+    imageUrl: '../src/assets/images/services/Data Center.jpg',
+    features: [
+      'Data Center Fabric Design',
+      'High-Speed Switching',
+      'Network Virtualization',
+      'Load Balancing',
+      'Redundancy & High Availability',
+      'Network Automation'
+    ],
+    benefits: [
+      'High-performance networking',
+      'Scalable infrastructure design',
+      'Maximum uptime and reliability',
+      'Optimized application performance'
+    ],
+    technicalSpecs: [
+      '25G/40G/100G Ethernet switching',
+      'Spine-leaf architecture',
+      'Software-defined networking (SDN)',
+      'Network automation and orchestration'
+    ]
+  },
+
+  'gpon-network': {
+    id: 'gpon-network',
+    title: 'GPON (Gigabit Passive Optical Network)',
+    category: 'Network',
+    description: 'GPON solutions for high-speed fiber optic connectivity and broadband services.',
+    fullDescription: 'Gigabit Passive Optical Network (GPON) solutions providing high-speed fiber optic connectivity for broadband, voice, and video services with efficient bandwidth utilization.',
+    quote: 'Delivering gigabit speeds through advanced passive optical networking.',
+    imageUrl: '../src/assets/images/services/GPON.jpg',
+    features: [
+      'GPON Network Design',
+      'Optical Line Terminal (OLT)',
+      'Optical Network Unit (ONU)',
+      'Passive Optical Splitters',
+      'Fiber Distribution Hubs',
+      'Network Management Systems'
+    ],
+    benefits: [
+      'High-speed fiber connectivity',
+      'Cost-effective passive infrastructure',
+      'Scalable broadband delivery',
+      'Future-proof network technology'
+    ],
+    technicalSpecs: [
+      'ITU-T G.984 GPON standards',
+      '2.5 Gbps downstream, 1.25 Gbps upstream',
+      'Passive optical components',
+      'Centralized network management'
+    ]
+  }
+};
+
+export const getServiceById = (id) => {
+  return servicesData[id] || null;
+};
+
+export const getServicesByCategory = (category) => {
+  return Object.values(servicesData).filter(service => service.category === category);
+};
+
+export const getAllServices = () => {
+  return Object.values(servicesData);
+};
+
+export const getServiceCategories = () => {
+  const categories = [...new Set(Object.values(servicesData).map(service => service.category))];
+  return categories;
+
+};

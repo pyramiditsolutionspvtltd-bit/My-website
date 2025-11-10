@@ -1,0 +1,273 @@
+/* Service Details Component Styles */
+.rs-service-details .service-features {
+  margin-top: 40px;
+}
+
+.rs-service-details .service-features .subtitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--rs-heading-color);
+}
+
+.rs-service-details .feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.rs-service-details .feature-list li {
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.rs-service-details .feature-list li i {
+  margin-right: 12px;
+  color: var(--rs-primary-color);
+  font-size: 18px;
+}
+
+.rs-service-details .service-benefits {
+  margin-top: 40px;
+}
+
+.rs-service-details .benefit-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  height: 100%;
+}
+
+.rs-service-details .benefit-icon {
+  margin-right: 15px;
+  color: var(--rs-primary-color);
+  font-size: 20px;
+}
+
+.rs-service-details .benefit-content p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.rs-service-details .technical-specs {
+  margin-top: 40px;
+}
+
+.rs-service-details .specs-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.rs-service-details .specs-list li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  border-bottom: 1px solid #eee;
+}
+
+.rs-service-details .specs-list li:last-child {
+  border-bottom: none;
+}
+
+.rs-service-details .specs-list li i {
+  margin-right: 12px;
+  color: var(--rs-primary-color);
+  font-size: 18px;
+}
+
+.rs-service-details .service-cta {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 40px;
+  border-radius: 15px;
+  border: 1px solid #dee2e6;
+}
+
+.rs-service-details .service-cta h4 {
+  margin-bottom: 15px;
+  color: var(--rs-heading-color);
+}
+
+.rs-service-details .service-cta p {
+  margin-bottom: 0;
+  color: var(--rs-body-color);
+}
+
+.rs-service-details .cta-buttons .main-btn {
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+.rs-service-details .cta-buttons .btn-outline {
+  background: transparent;
+  border: 2px solid var(--rs-primary-color);
+  color: var(--rs-primary-color);
+}
+
+.rs-service-details .cta-buttons .btn-outline:hover {
+  background: var(--rs-primary-color);
+  color: white;
+}
+
+/* Services Listing Component Styles */
+.services-listing-container {
+  padding: 60px 0;
+}
+
+.service-card {
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 15px;
+  padding: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.service-card-body {
+  flex: 1;
+}
+
+.service-category-badge {
+  margin-bottom: 20px;
+}
+
+.service-category-badge .badge {
+  font-size: 12px;
+  padding: 6px 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.service-icon {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.service-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.service-title a {
+  color: var(--rs-heading-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.service-title a:hover {
+  color: var(--rs-primary-color);
+}
+
+.service-description {
+  color: var(--rs-body-color);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.service-card .feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-card .feature-list li {
+  padding: 5px 0;
+  font-size: 14px;
+  color: var(--rs-body-color);
+}
+
+.service-card-footer {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.service-list-item {
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 25px;
+  transition: all 0.3s ease;
+}
+
+.service-list-item:hover {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Services Page Styles */
+.rs-services-intro {
+  background: #f8f9fa;
+}
+
+.rs-services-intro .section-title h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--rs-heading-color);
+}
+
+.rs-services-intro .section-title .description {
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--rs-body-color);
+  margin: 0;
+}
+
+.rs-services-cta {
+  background: #f8f9fa !important;
+}
+
+.rs-services-cta .cta-content h3 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--rs-heading-color);
+}
+
+.rs-services-cta .cta-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--rs-body-color);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .service-card {
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .service-list-item {
+    padding: 20px;
+  }
+  
+  .rs-service-details .service-cta {
+    padding: 30px 20px;
+  }
+  
+  .rs-service-details .cta-buttons .main-btn {
+    margin-right: 0;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  
+  .rs-services-intro .section-title h2 {
+    font-size: 28px;
+  }
+  
+  .rs-services-cta .cta-content h3 {
+    font-size: 24px;
+  }
+}

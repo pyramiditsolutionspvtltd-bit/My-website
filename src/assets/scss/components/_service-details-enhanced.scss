@@ -1,0 +1,227 @@
+/* Enhanced Service Details Styles */
+
+.rs-service-details {
+  .service-hero-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    
+    .hero-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #2c3e50;
+      line-height: 1.2;
+    }
+    
+    .hero-description {
+      font-size: 1.2rem;
+      color: #6c757d;
+      line-height: 1.6;
+    }
+    
+    .service-category-badge {
+      .badge {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+        border-radius: 20px;
+        background-color: #F26F20 !important;
+      }
+    }
+    
+    .hero-actions {
+      .btn {
+        border-radius: 25px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        
+        &:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+        
+        &.btn-outline-primary {
+          border-color: #F26F20;
+          color: #F26F20;
+          
+          &:hover {
+            background-color: #F26F20;
+            border-color: #F26F20;
+          }
+        }
+      }
+    }
+    
+    .hero-image {
+      img {
+        border-radius: 15px;
+        transition: transform 0.3s ease;
+        
+        &:hover {
+          transform: scale(1.02);
+        }
+      }
+    }
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2c3e50;
+    position: relative;
+    padding-bottom: 15px;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, #F26F20, #e55a0d);
+      border-radius: 3px;
+    }
+  }
+  
+  .quote-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    border-left: 4px solid #F26F20;
+    
+    .quote-icon {
+      i {
+        color: #F26F20;
+        opacity: 0.7;
+      }
+    }
+  }
+  
+  .feature-card {
+    transition: all 0.3s ease;
+    border: 1px solid #e9ecef !important;
+    
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1) !important;
+      border-color: #F26F20 !important;
+    }
+    
+    .feature-icon {
+      i {
+        color: #F26F20;
+      }
+    }
+    
+    .feature-title {
+      color: #2c3e50;
+      font-weight: 600;
+    }
+  }
+  
+  .benefit-item {
+    transition: all 0.3s ease;
+    
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    }
+    
+    .benefit-icon {
+      i {
+        color: #F26F20;
+      }
+    }
+    
+    .benefit-title {
+      color: #2c3e50;
+      font-weight: 600;
+    }
+  }
+  
+  .spec-item {
+    transition: all 0.3s ease;
+    
+    &:hover {
+      background-color: #ffffff !important;
+      transform: translateX(10px);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    
+    i {
+      color: #F26F20;
+    }
+  }
+  
+  .cta-card {
+    background: linear-gradient(135deg, #F26F20 0%, #e55a0d 100%) !important;
+    box-shadow: 0 15px 35px rgba(242, 111, 32, 0.3);
+    
+    .btn {
+      border-radius: 25px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      }
+    }
+    
+    .contact-info {
+      .contact-item {
+        color: rgba(255,255,255,0.9);
+        font-size: 0.95rem;
+        
+        i {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .rs-service-details {
+    .service-hero-section {
+      padding: 20px 15px;
+      
+      .hero-title {
+        font-size: 2rem;
+      }
+      
+      .hero-description {
+        font-size: 1.1rem;
+      }
+      
+      .hero-actions {
+        .btn {
+          display: block;
+          width: 100%;
+          margin-bottom: 10px;
+          margin-right: 0 !important;
+        }
+      }
+    }
+    
+    .section-title {
+      font-size: 1.75rem;
+    }
+    
+    .cta-card {
+      .cta-buttons {
+        .btn {
+          display: block;
+          width: 100%;
+          margin-bottom: 10px;
+          margin-right: 0 !important;
+        }
+      }
+      
+      .contact-info {
+        .col-md-4 {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}

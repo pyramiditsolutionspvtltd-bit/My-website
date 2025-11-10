@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmailJS Diagnostic Tool</title>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        .container { max-width: 800px; margin: 0 auto; background: white; padding: 20px; border-radius: 10px; }
+        .test-btn { background: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; margin: 10px 0; }
+        .result { background: #f8f9fa; padding: 15px; margin: 10px 0; border-radius: 5px; border-left: 4px solid #007bff; }
+        .error { border-left-color: #dc3545; background: #f8d7da; }
+        .success { border-left-color: #28a745; background: #d4edda; }
+        pre { background: #f1f1f1; padding: 10px; border-radius: 3px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📧 EmailJS Diagnostic Tool</h1>
+        <p>This tool will test your EmailJS configuration step by step.</p>
+        
+        <button class="test-btn" onclick="testEmailJSInit()">1. Test EmailJS Initialization</button>
+        <div id="init-result"></div>
+        
+        <button class="test-btn" onclick="testEmailJSSend()">2. Test Email Send</button>
+        <div id="send-result"></div>
+        
+        <button class="test-btn" onclick="checkBrowserSupport()">3. Check Browser Support</button>
+        <div id="browser-result"></div>
+        
+        <h3>Configuration Being Tested:</h3>
+        <pre id="config-display"></pre>
+    </div>
+
+    <script>
+        const config = {
+            serviceId: 'service_0wxgwe6',
+            templateId: 'template_mk2sdif',
+            publicKey: 'pYRRhbVw0wgCpZBf2'
+        };
+        
+        document.getElementById('config-display').textContent = JSON.stringify(config, null, 2);
+        
+        function showResult(elementId, message, isError = false) {
+            const element = document.getElementById(elementId);
+            element.innerHTML = `<div class="result ${isError ? 'error' : 'success'}">${message}</div>`;
+        }
+        
+        function testEmailJSInit() {
+            try {
+                emailjs.init(config.publicKey);
+                showResult('init-result', '✅ EmailJS initialized successfully with public key: ' + config.publicKey);
+            } catch (error) {
+                showResult('init-result', '❌ EmailJS initialization failed: ' + error.message, true);
+            }
+        }
+        
+        async function testEmailJSSend() {
+            try {
+                showResult('send-result', '⏳ Sending test email...');
+                
+                const testParams = {
+                    from_name: 'Diagnostic Test',
+                    from_email: 'test@pyramidsolutions.co.in',
+                    phone: '+040 4200 3912',
+                    topic: 'EmailJS Test',
+                    message: 'This is a test email from the EmailJS diagnostic tool.',
+                    to_email: 'pyramiditsolutionspvtltd@gmail.com',
+                    submission_date: new Date().toLocaleString(),
+                    company_name: 'Pyramid IT Solutions'
+                };
+                
+                console.log('Sending with params:', testParams);
+                
+                const result = await emailjs.send(
+                    config.serviceId,
+                    config.templateId,
+                    testParams,
+                    config.publicKey
+                );
+                
+                showResult('send-result', `✅ Email sent successfully! Response: ${JSON.stringify(result)}`);
+                
+            } catch (error) {
+                console.error('EmailJS send error:', error);
+                
+                let errorMsg = `❌ Email send failed: ${error.message || error.text || 'Unknown error'}`;
+                
+                if (error.status) {
+                    errorMsg += `\nStatus: ${error.status}`;
+                }
+                
+                if (error.text) {
+                    errorMsg += `\nDetails: ${error.text}`;
+                    
+                    // Common error solutions
+                    if (error.text.includes('template')) {
+                        errorMsg += '\n\n💡 Solution: Check that template "template_mk2sdif" exists and is active in your EmailJS dashboard.';
+                    } else if (error.text.includes('service')) {
+                        errorMsg += '\n\n💡 Solution: Check that service "service_0wxgwe6" exists and is connected in your EmailJS dashboard.';
+                    } else if (error.text.includes('Invalid')) {
+                        errorMsg += '\n\n💡 Solution: Check your public key and ensure it matches your EmailJS account.';
+                    }
+                }
+                
+                showResult('send-result', errorMsg, true);
+            }
+        }
+        
+        function checkBrowserSupport() {
+            let support = [];
+            
+            // Check fetch API
+            if (typeof fetch !== 'undefined') {
+                support.push('✅ Fetch API supported');
+            } else {
+                support.push('❌ Fetch API not supported');
+            }
+            
+            // Check Promise
+            if (typeof Promise !== 'undefined') {
+                support.push('✅ Promises supported');
+            } else {
+                support.push('❌ Promises not supported');
+            }
+            
+            // Check EmailJS library
+            if (typeof emailjs !== 'undefined') {
+                support.push('✅ EmailJS library loaded');
+            } else {
+                support.push('❌ EmailJS library not loaded');
+            }
+            
+            // Check CORS
+            support.push('✅ CORS should be handled by EmailJS');
+            
+            showResult('browser-result', support.join('<br>'));
+        }
+        
+        // Auto-run browser support check
+        checkBrowserSupport();
+    </script>
+</body>
+</html>
