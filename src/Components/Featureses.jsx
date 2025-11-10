@@ -1,10 +1,11 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
 const Featureses = ({ service_icon1, service_icon2, service_icon3, service_icon4, service_icon5, service_icon6, service_icon7, service_icon8 }) => {
     const [activeIndex, setActiveIndex] = useState(null);
     const [isMobile, setIsMobile] = useState(false);
+    const navigate = useNavigate();
 
     useEffect(() => {
         const checkMobile = () => {
@@ -28,8 +29,9 @@ const Featureses = ({ service_icon1, service_icon2, service_icon3, service_icon4
         { title: 'Cloud Computing', image: service_icon8, linkUrl: '/service/cloud-computing-service' },
     ]
 
-    const handleItemClick = (index) => {
-        setActiveIndex(activeIndex === index ? null : index);
+    const handleItemClick = (index, linkUrl) => {
+        setActiveIndex(index);
+        navigate(linkUrl);
     };
     // Split the bannerData into two groups of 4
     const firstRow = bannerData.slice(0, 4);
@@ -42,7 +44,7 @@ const Featureses = ({ service_icon1, service_icon2, service_icon3, service_icon4
                 <div 
                     key={actualIndex} 
                     className="rs-service-2__item"
-                    onClick={() => handleItemClick(actualIndex)}
+                    onClick={() => handleItemClick(actualIndex, data.linkUrl)}
                     style={{ 
                         cursor: 'pointer',
                         backgroundColor: activeIndex === actualIndex ? '#f24c1a' : 'transparent',
@@ -74,17 +76,11 @@ const Featureses = ({ service_icon1, service_icon2, service_icon3, service_icon4
                             marginTop: isMobile ? '15px' : '15px',
                             marginBottom: isMobile ? '8px' : '5px',
                             padding: isMobile ? '0 8px' : '0 8px',
-                            fontWeight: '600'
+                            fontWeight: '600',
+                            color: activeIndex === actualIndex ? '#fff' : 'inherit'
                         }}
                     >
-                        <Link 
-                            to={data.linkUrl}
-                            style={{
-                                color: activeIndex === actualIndex ? '#fff' : 'inherit'
-                            }}
-                        >
-                            {data.title}
-                        </Link>
+                        {data.title}
                     </h5>
                 </div>
             );
