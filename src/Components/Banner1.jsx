@@ -11,7 +11,7 @@ const Banner1 = ({heart_pulse_orange2, heart_pulse_orange}) => {
             minHeight: '100vh',
             backgroundImage: 'none !important',
             background: 'transparent',
-            padding: '300px 0 0px'
+            padding: 'clamp(200px, 30vh, 300px) 0 0px'
         }}>
             {/* Local Video Background */}
             <div style={{
@@ -59,8 +59,9 @@ const Banner1 = ({heart_pulse_orange2, heart_pulse_orange}) => {
                 className="excellence-badge excellence-badge-interactive" 
                 style={{
                     position: 'absolute',
-                    top: '150px',
-                    right: '100px',
+                    top: '120px',
+                    left: '50%',
+                    transform: 'translateX(-50%)',
                     zIndex: 2,
                     animation: 'excellenceFloat 3s ease-in-out infinite, excellenceGlow 2s ease-in-out infinite alternate',
                     cursor: 'pointer',
@@ -68,25 +69,24 @@ const Banner1 = ({heart_pulse_orange2, heart_pulse_orange}) => {
                 }}
                 onMouseEnter={(e) => {
                     e.currentTarget.style.animation = 'excellenceFloatHover 0.8s ease-in-out infinite, excellenceGlowIntense 1s ease-in-out infinite alternate';
-                    e.currentTarget.style.transform = 'scale(1.1)';
                 }}
                 onMouseLeave={(e) => {
                     e.currentTarget.style.animation = 'excellenceFloat 3s ease-in-out infinite, excellenceGlow 2s ease-in-out infinite alternate';
-                    e.currentTarget.style.transform = 'scale(1)';
                 }}
             >
                 <img 
                     src={excellenceLogo} 
                     alt="20 Years of Excellence" 
                     style={{
-                        width: '180px',
+                        width: 'auto',
                         height: 'auto',
-                        maxHeight: '160px',
+                        maxHeight: 'clamp(120px, 14vw, 160px)',
                         objectFit: 'contain',
                         filter: 'drop-shadow(0 12px 35px rgba(242, 111, 32, 0.4))',
                         transition: 'all 0.4s ease',
-                        borderRadius: '50%',
-                        background: 'radial-gradient(circle, rgba(242, 111, 32, 0.1) 0%, transparent 70%)'
+                        borderRadius: '0%',
+                        background: 'radial-gradient(circle, rgba(242, 111, 32, 0.1) 0%, transparent 70%)',
+                        display: 'block'
                     }}
                     className="excellence-logo excellence-logo-interactive"
                 />
@@ -96,13 +96,14 @@ const Banner1 = ({heart_pulse_orange2, heart_pulse_orange}) => {
                     className="excellence-ring"
                     style={{
                         position: 'absolute',
-                        top: '-15px',
-                        left: '-15px',
-                        width: '210px',
-                        height: '210px',
-                        border: '3px solid rgba(242, 111, 32, 0.3)',
+                        top: '50%',
+                        left: '50%',
+                        transform: 'translate(-50%, -50%)',
+                        width: 'clamp(110px, 13vw, 170px)',
+                        height: 'clamp(110px, 13vw, 170px)',
+                        border: 'clamp(2px, 0.3vw, 3px) solid rgba(242, 111, 32, 0.3)',
                         borderRadius: '50%',
-                        borderTop: '3px solid #F26F20',
+                        borderTop: 'clamp(2px, 0.3vw, 3px) solid #F26F20',
                         animation: 'excellenceRotate 4s linear infinite',
                         zIndex: -1,
                         transition: 'all 0.3s ease'
@@ -114,11 +115,12 @@ const Banner1 = ({heart_pulse_orange2, heart_pulse_orange}) => {
                     className="excellence-pulse"
                     style={{
                         position: 'absolute',
-                        top: '-20px',
-                        left: '-20px',
-                        width: '220px',
-                        height: '220px',
-                        border: '2px solid rgba(242, 111, 32, 0.2)',
+                        top: '50%',
+                        left: '50%',
+                        transform: 'translate(-50%, -50%)',
+                        width: 'clamp(115px, 13.5vw, 175px)',
+                        height: 'clamp(115px, 13.5vw, 175px)',
+                        border: 'clamp(1px, 0.2vw, 2px) solid rgba(242, 111, 32, 0.2)',
                         borderRadius: '50%',
                         animation: 'excellencePulse 2s ease-in-out infinite',
                         zIndex: -2,
@@ -131,14 +133,14 @@ const Banner1 = ({heart_pulse_orange2, heart_pulse_orange}) => {
                     className="excellence-hover-ring"
                     style={{
                         position: 'absolute',
-                        top: '-25px',
-                        left: '-25px',
-                        width: '230px',
-                        height: '230px',
+                        top: '50%',
+                        left: '50%',
+                        transform: 'translate(-50%, -50%) scale(0.8)',
+                        width: 'clamp(120px, 14vw, 180px)',
+                        height: 'clamp(120px, 14vw, 180px)',
                         border: '1px solid rgba(242, 111, 32, 0.1)',
                         borderRadius: '50%',
                         opacity: 0,
-                        transform: 'scale(0.8)',
                         transition: 'all 0.4s ease',
                         zIndex: -3
                     }}

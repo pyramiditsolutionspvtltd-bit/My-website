@@ -69,12 +69,8 @@ import faq_left_img from '../../assets/images/faq/faq-left-img.png';
 import couple_ball_layer from '../../assets/images/faq/couple-ball-layer.svg';
 import testimonial_left_img from '../../assets/images/testimonial/testimonial-left-img.jpg';
 import quote_orange from '../../assets/images/testimonial/quote_orange.svg';
-import testi1 from '../../assets/images/testimonial/testi1.jpg';
+import testi from '../../assets/images/testimonial/testi.jpg';
 import testimonial_brsnd_2 from '../../assets/images/testimonial/testimonial-brsnd-2.png';
-import testi2 from '../../assets/images/testimonial/testi2.jpg';
-import testi3 from '../../assets/images/testimonial/testi3.jpg';
-import testi5 from '../../assets/images/testimonial/testi5.jpg';
-import testi4 from '../../assets/images/testimonial/testi4.jpg';
 import blog_6 from '../../assets/images/blog/blog-6.jpg'
 import blog_8 from '../../assets/images/blog/blog-8.png'
 import blog_5 from '../../assets/images/blog/blog-5.jpg'
@@ -199,11 +195,7 @@ const Home = () => {
         heart_pulse_rate_orange_2={heart_pulse_rate_orange_2}
         heart_pulse_rate_orange={heart_pulse_rate_orange}
         quote_orange={quote_orange}
-        testi1={testi1}
-        testi2={testi2}
-        testi3={testi3}
-        testi4={testi4}
-        testi5={testi5}
+        testi={testi}
         testimonial_left_img={testimonial_left_img}
         testimonial_brsnd_2={testimonial_brsnd_2}
       />

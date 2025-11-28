@@ -1,21 +1,21 @@
 import React, { useState, useEffect, useRef } from "react";
 import Slider from "react-slick";
 
-const Testimonial = ({ heart_pulse_rate_orange_2, heart_pulse_rate_orange, testi1, testimonial_left_img, quote_orange, testimonial_brsnd_2, testi3, testi2, testi5, testi4, passClass }) => {
+const Testimonial = ({ heart_pulse_rate_orange_2, heart_pulse_rate_orange, testi1, testimonial_left_img, quote_orange, testimonial_brsnd_2, testi, passClass }) => {
     const persons = [
         {
             _id: 1,
             image1: quote_orange,
-            image2: testi1,
+            image2: testi,
             image3: "",
             details: 'Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality. Podcasting operational change management inside of workflows to establish a framework.',
-            name: 'Martins Ana',
-            designation: 'CEO, Bribbble LLC'
+            name: ' ',
+            designation: ''
         },
         {
             _id: 2,
             image1: quote_orange,
-            image2: testi2,
+            image2: testi,
             image3: "",
             details: 'Keeping your eye on the ball while performing a deep dive on the start-up mentality. Taking seamless key performance indicators offline to maximise the long tail.  Podcasting operational change management inside of workflows to establish a framework.',
             name: 'Robards Lynda',
@@ -24,7 +24,7 @@ const Testimonial = ({ heart_pulse_rate_orange_2, heart_pulse_rate_orange, testi
         {
             _id: 3,
             image1: quote_orange,
-            image2: testi3,
+            image2: testi,
             image3: "",
             details: 'Operational  podcasting change management inside of workflows to establish a framework . Keeping your eye on the ball while performing a deep dive on the start-up mentality. Taking seamless key performance indicators offline to maximize the long tail.',
             name: 'Taylor Matthew',
@@ -33,7 +33,7 @@ const Testimonial = ({ heart_pulse_rate_orange_2, heart_pulse_rate_orange, testi
         {
             _id: 4,
             image1: quote_orange,
-            image2: testi4,
+            image2: testi,
             image3: "",
             details: 'Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality. Podcasting operational change management inside of workflows to establish a framework.',
             name: 'Ribeiro Nicolas',
@@ -42,7 +42,7 @@ const Testimonial = ({ heart_pulse_rate_orange_2, heart_pulse_rate_orange, testi
         {
             _id: 5,
             image1: quote_orange,
-            image2: testi5,
+            image2: testi,
             image3: "",
             details: 'Operational establish to Podcasting change management inside of workflows a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality.',
             name: 'Howard Esther',
