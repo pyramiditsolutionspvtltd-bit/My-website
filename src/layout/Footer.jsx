@@ -175,7 +175,7 @@ Pyramid IT turns tech into opportunity.</p>
                                 <>
                                     <div className="col-lg-5">
                                         <div className="rs-footer__copyright-text">
-                                            <p>© 2025 Pyramid IT Solutions. Designed By <Link target="_blank" to="https://rstheme.com/">APTITPS.</Link></p>
+                                           <p>© 2025 Pyramid IT Solutions. Designed By <Link target="_blank" to="https://aptitps.com/">APTITPS.</Link></p>
                                         </div>
                                     </div>
                                     <div className="col-lg-7">
