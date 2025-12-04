@@ -16,6 +16,9 @@ const getServiceIcon = (serviceId) => {
         'ftth-fiber-to-home': 'ri-speed-line',
         'structured-cabling': 'ri-building-line',
         'utp-cabling': 'ri-links-line',
+        'stp-cabling': 'ri-links-line',
+        'optical-fiber-cabling': 'ri-links-line',
+        'voice-cabling': 'ri-links-line',
         'unified-computing': 'ri-server-line',
         'internet-of-things-iot': 'ri-sensor-line',
         'ip-surveillance-cloud': 'ri-cloud-line',
@@ -25,7 +28,9 @@ const getServiceIcon = (serviceId) => {
         'lan-network': 'ri-computer-line',
         'wlan-network': 'ri-wifi-line',
         'wan-network': 'ri-global-line',
-        'data-center-network': 'ri-database-2-line'
+        'data-center-network': 'ri-database-2-line',
+        'gpon-network': 'ri-speed-line',
+        'cloud-computing-service': 'ri-cloud-line'
     };
     
     return iconMap[serviceId] || 'ri-tools-line';

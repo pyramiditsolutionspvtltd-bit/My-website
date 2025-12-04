@@ -56,7 +56,7 @@ const Brand = ({ heart_pulse_rate_orange_2, heart_pulse_rate_orange, partner1, p
                         <div className="col-lg-12">
                             <div className={`rs-brand__top-title ${sectitlecls ? sectitlecls : ''}`}>
                                 <img src={heart_pulse_rate_orange_2} alt="" />
-                                <span>Our brands with Pyramid IT Solutions</span>
+                                <span>Our Partners with Pyramid IT Solutions</span>
                                 <img src={heart_pulse_rate_orange} alt="" />
                             </div>
                         </div>

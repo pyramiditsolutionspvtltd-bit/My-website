@@ -20,7 +20,7 @@ const Features = ({ heart_pulse_rate_orange_2, heart_pulse_rate_orange, featured
                                 <span>Our Professional Services</span>
                                 <img src={heart_pulse_rate_orange} alt="icon" />
                             </div>
-                            <h2 className="title split-in-fade">We run all kinds of Networking Services</h2>
+                            <h2 className="title split-in-fade"></h2>
                         </div>
                     </div>
                 </div>

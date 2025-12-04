@@ -21,12 +21,13 @@ const Featureses = ({ service_icon1, service_icon2, service_icon3, service_icon4
     const bannerData = [
         { title: 'Cyber Security', image: service_icon1, linkUrl: '/service/cyber-security' },
         { title: 'Network Solutions', image: service_icon2, linkUrl: '/service/wireless-solutions' },
-        { title: 'IP Surveillance', image: service_icon3, linkUrl: '/service/ip-surveillance-cloud' },
-        { title: 'Structured Cabling', image: service_icon4, linkUrl: '/service/structured-cabling' },
-        { title: 'Unified Computing', image: service_icon5, linkUrl: '/service/unified-computing' },
         { title: 'Unified Collaboration', image: service_icon6, linkUrl: '/service/unified-collaboration' },
-        { title: 'GPON', image: service_icon7, linkUrl: '/service/gpon-network' },
+        { title: 'Unified Computing', image: service_icon5, linkUrl: '/service/unified-computing' },
         { title: 'Cloud Computing', image: service_icon8, linkUrl: '/service/cloud-computing-service' },
+        { title: 'IP Surveillance', image: service_icon3, linkUrl: '/service/ip-surveillance-cloud' },       
+        { title: 'GPON', image: service_icon7, linkUrl: '/service/gpon-network' },
+        { title: 'Structured Cabling', image: service_icon4, linkUrl: '/service/structured-cabling' },
+
     ]
 
     const handleItemClick = (index, linkUrl) => {

@@ -38,13 +38,17 @@ export const servicesData = {
   // IT Services Sub-menu
   'networking-internetworking': {
     id: 'networking-internetworking',
-    title: 'Networking & Internetworking',
+    title: 'Networking Solutions',
     category: 'IT Services',
     description: 'Comprehensive networking solutions for seamless connectivity and communication across your organization.',
     fullDescription: 'Networking being the backbone of every organization today, at Pyramid IT Solutions we ensure that networking solutions we provide to our customers are future ready. We have robust end-to-end Networking solutions portfolio and are committed in delivering advanced Networking solutions to SMB, Large Enterprise network and Data Centres. We Design new solutions for your business requirements, based on best practice designs and templates that are aligned to multi-vendor technology architectures.',
     quote: '“From wired networks to wireless innovations, we build secure, scalable and future-ready solutions that help businesses to stay connected anytime, anywhere”.',
   imageUrl: Networking_Internetworking,
     features: [
+      'WAN',
+      'SD-WAN',
+      'LAN',
+      'WLAN',
       'Network Design & Architecture',
       'LAN/WAN Implementation',
       'Router & Switch Configuration',
@@ -145,11 +149,16 @@ export const servicesData = {
   imageUrl: Cyber_Security,
     features: [
       'Firewall Configuration & Management',
+      'Endpoint Security',
+      'Data Loss Prevention',
+      'Email Security',
+      'Application Security',
       'Intrusion Detection Systems',
-      'Security Information Event Management',
+      'Identity and Access Management',
+      'Security Information Event Management (SIEM)',
       'Incident Response Planning',
       'Security Awareness Training',
-      'Penetration Testing'
+      'VAPT (Vulnerability Assessment and Penetration Testing) - Systematic Vulnerability Discovery, Risk-Based Prioritization, Safe Exploitation Simulation, Actionable Remediation Reports, Compliance Documentation'
     ],
     benefits: [
       'Advanced threat protection',
@@ -291,6 +300,10 @@ export const servicesData = {
     quote: 'Your security is our priority — with Pyramid IT IP surveillance, you gain reliable, scalable, and intelligent systems that protect your business and people without compromise.',
   imageUrl: IP_Surveillance,
     features: [
+      'IP Cameras',
+      'NVR',
+      'VMS',
+      'Video Analytics',
       'HD IP Camera Installation',
       'Video Management Systems',
       'Motion Detection & Analytics',
@@ -340,6 +353,9 @@ export const servicesData = {
     quote: 'From video conferencing to instant messaging, Pyramid IT ensures every conversation is connected, secure, and efficient, helping your business operate seamlessly in a digital world',
   imageUrl: Unified_Communications,
     features: [
+      'IPPBX',
+      'Audio Conferencing',
+      'Video Conferencing',
       'VoIP Phone Systems',
       'Video Conferencing Integration',
       'Instant Messaging Platforms',
@@ -438,6 +454,9 @@ export const servicesData = {
     quote: 'Experience uninterrupted high-speed internet with Pyramid IT FTTH, bringing blazing-fast fibre connections that keep your family, work, and entertainment always connected.',
   imageUrl: FTTH_Fiber_To_The_Home,
     features: [
+      'FTTH',
+      'FTTD',
+      'FTTO',
       'Fiber Optic Installation',
       'High-Speed Internet Connectivity',
       'Gigabit Ethernet Services',
@@ -488,12 +507,15 @@ export const servicesData = {
     quote: 'From planning to installation, Pyramid IT delivers structured cabling solutions that create a strong, future-ready foundation for your enterprise networks, data centers, and communication systems.',
   imageUrl: Structured_Cabling,
     features: [
+      'UTP Cabling',
+      'STP Cabling',
+      'Optical Fiber Cabling',
       'Cat6/Cat6A Cable Installation',
       'Fiber Optic Cabling',
       'Patch Panel Configuration',
       'Cable Management Systems',
       'Testing & Certification',
-      'Documentation & Labeling'
+      'Documentation & Labelling'
     ],
     benefits: [
       'Organized cable infrastructure',
@@ -731,6 +753,11 @@ export const servicesData = {
     quote: 'From servers and storage to networking, Pyramid IT Unified Computing delivers an integrated solution that reduces complexity, maximizes efficiency, and supports business growth',
   imageUrl: Unified_Computing,
     features: [
+      'Servers',
+      'Storage',
+      'Backup',
+      'SAN',
+      'Virtualization',
       'Unified Computing Platform',
       'Converged Infrastructure',
       'Virtualization Integration',
@@ -930,12 +957,12 @@ export const servicesData = {
     quote: 'From cybersecurity to compliance and disaster recovery, Pyramid IT Risk Management delivers comprehensive solutions that minimize threats, protect assets, and empower confident decision-making.',
   imageUrl: IT_Risk_Assessment,
     features: [
-      'Comprehensive Risk Analysis',
-      'Vulnerability Assessment',
-      'Threat Modeling',
-      'Risk Mitigation Planning',
-      'Compliance Gap Analysis',
-      'Security Policy Review'
+      'Regular Vulnerability Scans',
+      'Centralized Antivirus Management',
+      'Security Risk Assessment',
+      'Patch Management',
+      'Compliance Reporting',
+      'Threat Intelligence Integration'
     ],
     benefits: [
       'Proactive risk identification',
@@ -979,12 +1006,10 @@ export const servicesData = {
     quote: 'From network performance to cybersecurity, Pyramid IT IT Assessment Services deliver a complete evaluation that empowers businesses to make informed technology decisions with confidence',
   imageUrl: IT_Assessment,
     features: [
-      'Infrastructure Evaluation',
-      'Performance Analysis',
-      'Technology Gap Assessment',
-      'Modernization Roadmap',
-      'Cost-Benefit Analysis',
-      'Strategic Recommendations'
+      'Regular Vulnerability Scans',
+      'Centralized Antivirus Management',
+      'Patch Management',
+      'Threat Intelligence Integration'
     ],
     benefits: [
       'Clear understanding of IT current state',
@@ -1224,6 +1249,15 @@ faqs: [
     quote: 'From Businesses to Smart Homes, Pyramid IT GPON Ensures High-Speed Internet, Clear Voice, and Smooth Video, All on One Network.',
   imageUrl: GPON,
     features: [
+      'FTTH',
+      'FTTD',
+      'FTTO',
+      'Fiber Optic Installation',
+      'High-Speed Internet Connectivity',
+      'Gigabit Ethernet Services',
+      'Fiber Network Design',
+      'Last Mile Connectivity',
+      'Fiber Maintenance & Support',
       'GPON Network Design',
       'Optical Line Terminal (OLT)',
       'Optical Network Unit (ONU)',
@@ -1362,16 +1396,98 @@ faqs: [
   }
 };
 
+// Ordered service IDs based on the specified sequence
+const orderedServiceIds = [
+  // 1. Structured Cabling
+  'structured-cabling',
+  
+  // 2. GPON (FTTx)
+  'gpon-network',
+  
+  // 3. Unified Communications
+  'unified-communications',
+  
+  // 4. Unified Computing
+  'unified-computing',
+  
+  // 5. Data Center Services
+  'data-center-network',
+  
+  // 6. Cloud Computing
+  'cloud-computing-service',
+  
+  // 7. Cyber Security Solutions
+  'cyber-security',
+  
+  // 8. VAPT (Security Services AV/VA)
+  'security-services-av-va',
+  
+  // 9. IT Risk Assessment
+  'it-risk-assessment',
+  
+  // 10. IT Assessment
+  'it-assessment',
+  
+  // 11. IoT Solutions
+  'internet-of-things-iot',
+  
+  // 12. Audio & Video Integration
+  'audio-video-integration',
+  
+  // 13. FTTH Services
+  'ftth-fiber-to-home',
+  
+  // 14. IT Consulting
+  'it-itil-consulting'
+  
+  // Hidden services (not displayed on main services page)
+  // 'networking-internetworking', // Network Solutions
+  // 'ip-surveillance', // IP Surveillance
+  // 'utp-cabling',
+  // 'stp-cabling',
+  // 'optical-fiber-cabling',
+  // 'voice-cabling',
+  // 'vulnerability-assessment-antivirus',
+  // 'ip-surveillance-cloud',
+  // 'lan-network',
+  // 'wan-network',
+  // 'wlan-network',
+  // 'wireless-solutions'
+];
+
 export const getServiceById = (id) => {
   return servicesData[id] || null;
 };
 
 export const getServicesByCategory = (category) => {
-  return Object.values(servicesData).filter(service => service.category === category);
+  const categoryServices = Object.values(servicesData).filter(service => service.category === category);
+  // Sort by the ordered list
+  return categoryServices.sort((a, b) => {
+    const indexA = orderedServiceIds.indexOf(a.id);
+    const indexB = orderedServiceIds.indexOf(b.id);
+    if (indexA === -1) return 1;
+    if (indexB === -1) return -1;
+    return indexA - indexB;
+  });
 };
 
 export const getAllServices = () => {
-  return Object.values(servicesData);
+  // Return services in the specified order
+  const allServices = [];
+  orderedServiceIds.forEach(id => {
+    if (servicesData[id]) {
+      allServices.push(servicesData[id]);
+    }
+  });
+  
+  // Add any services not in the ordered list at the end
+  Object.values(servicesData).forEach(service => {
+    if (!orderedServiceIds.includes(service.id)) {
+      allServices.push(service);
+    }
+  });
+  
+  return allServices;
 };
 
 export const getServiceCategories = () => {
