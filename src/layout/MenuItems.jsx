@@ -10,14 +10,11 @@ const MenuItems = ({firstLvlMenu, secondLvlMenu}) => {
     const isITServicesActive = () => {
         const itServicesPaths = [
             '/service/networking-internetworking',
-            '/service/security-services-av-va',
-            '/service/cyber-security',
-            '/service/audio-video-integration',
-            '/service/wireless-solutions',
             '/service/ip-surveillance',
             '/service/unified-communications',
-            '/service/vulnerability-assessment-antivirus',
-            '/service/ftth-fiber-to-home'
+            '/service/ftth-fiber-to-home',
+            '/service/audio-video-integration',
+            '/service/data-center-network'
         ];
         return itServicesPaths.includes(location.pathname);
     };
@@ -26,10 +23,7 @@ const MenuItems = ({firstLvlMenu, secondLvlMenu}) => {
     const isStructuredCablingActive = () => {
         const structuredCablingPaths = [
             '/service/structured-cabling',
-            '/service/utp-cabling',
-            '/service/stp-cabling',
-            '/service/optical-cabling',
-            '/service/voice-cabling'
+            '/service/gpon-network'
         ];
         return structuredCablingPaths.includes(location.pathname);
     };
@@ -37,9 +31,9 @@ const MenuItems = ({firstLvlMenu, secondLvlMenu}) => {
     // Helper function to check if any Cloud Computing submenu is active
     const isCloudComputingActive = () => {
         const cloudComputingPaths = [
-            '/service/unified-computing',
+            '/service/cloud-computing-service',
             '/service/internet-of-things-iot',
-            '/service/ip-surveillance-cloud'
+            '/service/unified-computing'
         ];
         return cloudComputingPaths.includes(location.pathname);
     };
@@ -47,23 +41,13 @@ const MenuItems = ({firstLvlMenu, secondLvlMenu}) => {
     // Helper function to check if any Professional Services submenu is active
     const isProfessionalServicesActive = () => {
         const professionalServicesPaths = [
-            '/service/it-itil-consulting',
+            '/service/cyber-security',
+            '/service/vulnerability-assessment-antivirus',
             '/service/it-risk-assessment',
-            '/service/it-assessment'
+            '/service/it-assessment',
+            '/service/it-itil-consulting'
         ];
         return professionalServicesPaths.includes(location.pathname);
-    };
-
-    // Helper function to check if any Network submenu is active
-    const isNetworkActive = () => {
-        const networkPaths = [
-            '/service/lan-network',
-            '/service/wlan-network',
-            '/service/wan-network',
-            '/service/data-center-network',
-            '/service/gpon-network'
-        ];
-        return networkPaths.includes(location.pathname);
     };
 
     return (
@@ -88,69 +72,51 @@ const MenuItems = ({firstLvlMenu, secondLvlMenu}) => {
                 </Link>
                 <ul className="sub-menu">
                     <li className="has-clid">
-                        <Link to="/services" className={isITServicesActive() ? "active" : ""}>IT Services <i className="ri-arrow-down-s-fill" /></Link>
+                        <Link to="/services" className={isITServicesActive() ? "active" : ""}>IT Service <i className="ri-arrow-down-s-fill" /></Link>
                         <ul className="sub-menu">
-                            {/* <li>
-                                <Link to="/service/networking-internetworking" className={location.pathname === "/service/networking-internetworking" ? "active" : ""}>Networking & Internetworking</Link>
-                            </li> */}
                             <li>
-                                <Link to="/service/security-services-av-va" className={location.pathname === "/service/security-services-av-va" ? "active" : ""}>Security Services (AV / VA)</Link>
-                            </li>
-                            <li>
-                                <Link to="/service/cyber-security" className={location.pathname === "/service/cyber-security" ? "active" : ""}>Cyber Security</Link>
-                            </li>
-                            <li>
-                                <Link to="/service/audio-video-integration" className={location.pathname === "/service/audio-video-integration" ? "active" : ""}>Audio Video Integration</Link>
-                            </li>
-                            <li>
-                                <Link to="/service/wireless-solutions" className={location.pathname === "/service/wireless-solutions" ? "active" : ""}> Network Solution</Link>
+                                <Link to="/service/networking-internetworking" className={location.pathname === "/service/networking-internetworking" ? "active" : ""}>Network Solutions</Link>
                             </li>
                             <li>
                                 <Link to="/service/ip-surveillance" className={location.pathname === "/service/ip-surveillance" ? "active" : ""}>IP Surveillance</Link>
                             </li>
-                             <li>
-                                <Link to="/service/unified-communications" className={location.pathname === "/service/unified-communications" ? "active" : ""}>Unified Communications</Link>
+                            <li>
+                                <Link to="/service/unified-communications" className={location.pathname === "/service/unified-communications" ? "active" : ""}>Unified Communication</Link>
                             </li>
-                             <li>
-                                <Link to="/service/vulnerability-assessment-antivirus" className={location.pathname === "/service/vulnerability-assessment-antivirus" ? "active" : ""}>Vulnerability Assessment & Anti Virus Management</Link>
+                            <li>
+                                <Link to="/service/ftth-fiber-to-home" className={location.pathname === "/service/ftth-fiber-to-home" ? "active" : ""}>FTTH</Link>
                             </li>
-                             <li>
-                                <Link to="/service/ftth-fiber-to-home" className={location.pathname === "/service/ftth-fiber-to-home" ? "active" : ""}>FTTH (Fiber To The Home)</Link>
+                            <li>
+                                <Link to="/service/audio-video-integration" className={location.pathname === "/service/audio-video-integration" ? "active" : ""}>Audio Video intergration</Link>
+                            </li>
+                            <li>
+                                <Link to="/service/data-center-network" className={location.pathname === "/service/data-center-network" ? "active" : ""}>Data Center Services</Link>
                             </li>
                         </ul>
                     </li>
                     <li className="has-clid">
-                        <Link to="/services" className={isStructuredCablingActive() ? "active" : ""}>Structured Cabling <i className="ri-arrow-down-s-fill" /></Link>
+                        <Link to="/services" className={isStructuredCablingActive() ? "active" : ""}>Cabling Services <i className="ri-arrow-down-s-fill" /></Link>
                         <ul className="sub-menu">
                             <li>
-                                <Link to="/service/structured-cabling" className={location.pathname === "/service/structured-cabling" ? "active" : ""}>Structured Cabling</Link>
-                            </li>
-                             <li>
-                                <Link to="/service/utp-cabling" className={location.pathname === "/service/utp-cabling" ? "active" : ""}>UTP Cabling</Link>
+                                <Link to="/service/structured-cabling" className={location.pathname === "/service/structured-cabling" ? "active" : ""}>Strcutured Cabling</Link>
                             </li>
                             <li>
-                                <Link to="/service/stp-cabling" className={location.pathname === "/service/stp-cabling" ? "active" : ""}>STP Cabling</Link>
-                            </li>
-                            <li>
-                                <Link to="/service/optical-cabling" className={location.pathname === "/service/optical-cabling" ? "active" : ""}>Optical Cabling</Link>
-                            </li>
-                             <li>
-                                <Link to="/service/voice-cabling" className={location.pathname === "/service/voice-cabling" ? "active" : ""}>Voice Cabling Services</Link>
+                                <Link to="/service/gpon-network" className={location.pathname === "/service/gpon-network" ? "active" : ""}>GPON</Link>
                             </li>
                         </ul>
                     </li>
                     
                     <li className="has-clid">
-                        <Link to="/services" className={isCloudComputingActive() ? "active" : ""}>Cloud Computing <i className="ri-arrow-down-s-fill" /></Link>
+                        <Link to="/services" className={isCloudComputingActive() ? "active" : ""}>Cloud Services <i className="ri-arrow-down-s-fill" /></Link>
                         <ul className="sub-menu">
                             <li>
+                                <Link to="/service/cloud-computing-service" className={location.pathname === "/service/cloud-computing-service" ? "active" : ""}>Cloud Computing</Link>
+                            </li>
+                            <li>
+                                <Link to="/service/internet-of-things-iot" className={location.pathname === "/service/internet-of-things-iot" ? "active" : ""}>IOT</Link>
+                            </li>
+                            <li>
                                 <Link to="/service/unified-computing" className={location.pathname === "/service/unified-computing" ? "active" : ""}>Unified Computing</Link>
-                            </li>
-                            <li>
-                                <Link to="/service/internet-of-things-iot" className={location.pathname === "/service/internet-of-things-iot" ? "active" : ""}>Internet of Things (IOT)</Link>
-                            </li>
-                            <li>
-                                <Link to="/service/ip-surveillance-cloud" className={location.pathname === "/service/ip-surveillance-cloud" ? "active" : ""}>IP Surveillance</Link>
                             </li>
                         </ul>
                     </li>
@@ -159,33 +125,19 @@ const MenuItems = ({firstLvlMenu, secondLvlMenu}) => {
                         <Link to="/services" className={isProfessionalServicesActive() ? "active" : ""}>Professional Services <i className="ri-arrow-down-s-fill" /></Link>
                         <ul className="sub-menu">
                             <li>
-                                <Link to="/service/it-itil-consulting" className={location.pathname === "/service/it-itil-consulting" ? "active" : ""}>IT (ITIL) Consulting Services</Link>
+                                <Link to="/service/cyber-security" className={location.pathname === "/service/cyber-security" ? "active" : ""}>Cyber Security</Link>
+                            </li>
+                            <li>
+                                <Link to="/service/vulnerability-assessment-antivirus" className={location.pathname === "/service/vulnerability-assessment-antivirus" ? "active" : ""}>VAPT</Link>
                             </li>
                             <li>
                                 <Link to="/service/it-risk-assessment" className={location.pathname === "/service/it-risk-assessment" ? "active" : ""}>IT Risk Assessment</Link>
                             </li>
-                             <li>
+                            <li>
                                 <Link to="/service/it-assessment" className={location.pathname === "/service/it-assessment" ? "active" : ""}>IT Assessment</Link>
                             </li>
-                        </ul>
-                    </li>
-                    <li className="has-clid">
-                        <Link to="/services" className={isNetworkActive() ? "active" : ""}>Network <i className="ri-arrow-down-s-fill" /></Link>
-                        <ul className="sub-menu">
                             <li>
-                                <Link to="/service/lan-network" className={location.pathname === "/service/lan-network" ? "active" : ""}>LAN</Link>
-                            </li>
-                            <li>
-                                <Link to="/service/wlan-network" className={location.pathname === "/service/wlan-network" ? "active" : ""}>SD-WAN</Link>
-                            </li>
-                            <li>
-                                <Link to="/service/wan-network" className={location.pathname === "/service/wan-network" ? "active" : ""}>WAN</Link>
-                            </li>
-                            <li>
-                                <Link to="/service/data-center-network" className={location.pathname === "/service/data-center-network" ? "active" : ""}>Data Center</Link>
-                            </li>
-                            <li>
-                                <Link to="/service/gpon-network" className={location.pathname === "/service/gpon-network" ? "active" : ""}>GPON</Link>
+                                <Link to="/service/it-itil-consulting" className={location.pathname === "/service/it-itil-consulting" ? "active" : ""}>IT Consulting</Link>
                             </li>
                         </ul>
                     </li>

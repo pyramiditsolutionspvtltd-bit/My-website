@@ -231,7 +231,7 @@ const MobileMenu = ({ canvasLogo, isOnepage }) => {
                                                 className={location.pathname === "/service/vulnerability-assessment-antivirus" ? "active" : ""}
                                                 onClick={handleCloseMenu}
                                             >
-                                                Vulnerability Assessment & Anti Virus Management
+                                                 Vulnerability Assessment and Penetration Testing
                                             </Link>
                                         </li>
                                         <li>

@@ -1215,3 +1215,24 @@
         } 
     }
 }
+
+// Strength List Styles
+.strength-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.strength-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.strength-list i {
+    color: #00b894; /* match existing theme icon color */
+    font-size: 18px;
+    margin-top: 2px;
+}

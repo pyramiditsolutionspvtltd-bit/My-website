@@ -42,7 +42,7 @@ export const servicesData = {
     category: 'IT Services',
     description: 'Comprehensive networking solutions for seamless connectivity and communication across your organization.',
     fullDescription: 'Networking being the backbone of every organization today, at Pyramid IT Solutions we ensure that networking solutions we provide to our customers are future ready. We have robust end-to-end Networking solutions portfolio and are committed in delivering advanced Networking solutions to SMB, Large Enterprise network and Data Centres. We Design new solutions for your business requirements, based on best practice designs and templates that are aligned to multi-vendor technology architectures.',
-    quote: '“From wired networks to wireless innovations, we build secure, scalable and future-ready solutions that help businesses to stay connected anytime, anywhere”.',
+    quote: 'From wired networks to wireless innovations, we build secure, scalable and future-ready solutions that help businesses to stay connected anytime, anywhere.',
   imageUrl: Networking_Internetworking,
     features: [
       'WAN',
@@ -398,7 +398,7 @@ export const servicesData = {
 
   'vulnerability-assessment-antivirus': {
     id: 'vulnerability-assessment-antivirus',
-    title: 'Vulnerability Assessment & Anti Virus Management',
+    title: ' Vulnerability Assessment and Penetration Testing',
     category: 'IT Services',
     description: 'Comprehensive vulnerability assessment and enterprise antivirus management for robust security protection.',
     fullDescription: 'Under Vulnerability Assessment we identify Information assets in the organization and determine the criticality and value to the organization. This will enable us to keep the assets at required protection levels. Our proactive assessment of IT infrastructure enables us to assess the security posture of the IT assets.',

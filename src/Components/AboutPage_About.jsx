@@ -16,6 +16,7 @@ const AboutPage_About = ({ about_image, count_down_experience_icon, heart_pulse_
                     <img className="gsap-move down-200 start-91" src={arrow_purple} alt=""/>
                 </div>
             }
+            
             <div className="container">
                 <div className="row">
                     <div className="col-lg-6">
@@ -59,38 +60,16 @@ const AboutPage_About = ({ about_image, count_down_experience_icon, heart_pulse_
                             </p>
                             <ul>
                                 <h4>Key Strengths of Pyramid IT Solutions:</h4>
-                                <li>
-                                    <i className="ri-check-line"></i>
-                                    End-to-end network design and implementation
-                                </li>
-                                <li>
-                                    <i className="ri-check-line"></i>
-                                   One of the fastest-growing networking companies in Hyderabad.
-                                </li>
-                                <li>
-                                    <i className="ri-check-line"></i>
-                                    Specialized in Wired, Wireless & Optical Fiber solutions
-                                </li>
-                                <li>
-                                    <i className="ri-check-line"></i>
-                                    Proven track record with SMBs and large campus networks
-                                </li>
-                                <li>
-                                    <i className="ri-check-line"></i>
-                                    Authorized partners with leading global IT brands
-                                </li>
-                                 <li>
-                                    <i className="ri-check-line"></i>
-                                    20+ years of industry experience across multiple verticals.
-                                </li>
-                                 <li>
-                                    <i className="ri-check-line"></i>
-                                    Strong execution of turnkey voice & data solutions.
-                                </li>
-                                 <li>
-                                    <i className="ri-check-line"></i>
-                                   Certified team with Cisco,Juniper & HP
-                                </li>
+                               <ul class="strength-list">
+    <li><i class="ri-check-line"></i> End-to-end network design and implementation</li>
+    <li><i class="ri-check-line"></i> One of the fastest-growing networking companies in Hyderabad.</li>
+    <li><i class="ri-check-line"></i> Specialized in Wired, Wireless & Optical Fiber solutions</li>
+    <li><i className="ri-check-line"></i> Proven track record with SMBs and large campus networks</li>
+    <li><i class="ri-check-line"></i> Authorized partners with leading global IT brands</li>
+    <li><i class="ri-check-line"></i> 20+ years of industry experience across multiple verticals.</li>
+    <li><i class="ri-check-line"></i> Strong execution of turnkey voice & data solutions.</li>
+    <li><i class="ri-check-line"></i> Certified team with Cisco, Juniper & HP</li>
+</ul>
                                
                             </ul>
                         </div>
@@ -107,6 +86,8 @@ const AboutPage_About = ({ about_image, count_down_experience_icon, heart_pulse_
         </div>
     );
 };
+
+
 
 AboutPage_About.propTypes = {
     about_image: PropTypes.string,
