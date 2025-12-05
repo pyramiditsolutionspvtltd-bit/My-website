@@ -1,25 +1,98 @@
 import { useEffect, useState } from 'react';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import MenuItems from './MenuItems';
 import MobileMenu from './MobileMenu';
 import MenuItemsSingle from './MenuItemsSingle';
 import PropTypes from 'prop-types';
 import defaultLightLogo from '../assets/images/techzen_logo_home_2.png'
 import defaultDarkLogo from '../assets/images/main_logo_dark.png'
+import { getAllServices } from '../data/servicesData';
 
 const Navbar = ({ normalLogo, stickyLogo, canvasLogo, layout, phone, container, firstLvlMenu, secondLvlMenu, isOnepage }) => {
     const [isVisible, setIsVisible] = useState(false);
     const [searchQuery, setSearchQuery] = useState('');
-    
+    const [searchResults, setSearchResults] = useState([]);
+    const [showResults, setShowResults] = useState(false);
     const [dummyState, setDummyState] = useState(false);
     const [isSearchOpen, setIsSearchOpen] = useState(false);
+    const navigate = useNavigate();
 
+    // Define searchable content
+    const searchableContent = [
+        // Services
+        ...getAllServices().map(service => ({
+            title: service.title,
+            description: service.description,
+            keywords: [
+                service.title,
+                service.category,
+                service.description,
+                ...(service.features || [])
+            ].join(' ').toLowerCase(),
+            link: `/service/${service.id}`,
+            type: 'Service'
+        })),
+        // Pages
+        { title: 'Home', description: 'Welcome to Pyramid IT Solutions', keywords: 'home welcome pyramid it solutions', link: '/', type: 'Page' },
+        { title: 'About Us', description: 'Learn more about Pyramid IT Solutions', keywords: 'about us company profile team history', link: '/about', type: 'Page' },
+        { title: 'Services', description: 'Our comprehensive IT services', keywords: 'services solutions offerings', link: '/services', type: 'Page' },
+        { title: 'Contact Us', description: 'Get in touch with us', keywords: 'contact us reach location address phone email', link: '/contact', type: 'Page' },
+        { title: 'Careers', description: 'Join our team', keywords: 'careers jobs opportunities employment', link: '/careers', type: 'Page' },
+        { title: 'Corporate Governance', description: 'Our corporate governance policies', keywords: 'corporate governance policies compliance', link: '/corporate-governance', type: 'Page' }
+    ];
 
     const handleChange = (e) => {
-        setSearchQuery(e.target.value);
+        const query = e.target.value;
+        setSearchQuery(query);
+        
+        if (query.trim().length > 0) {
+            // Perform search
+            const results = searchableContent.filter(item => 
+                item.keywords.includes(query.toLowerCase())
+            ).slice(0, 5); // Limit to 5 results
+            
+            setSearchResults(results);
+            setShowResults(true);
+        } else {
+            setSearchResults([]);
+            setShowResults(false);
+        }
     };
+    
     const handleToggleSearch = () => {
         setIsSearchOpen(!isSearchOpen);
+        if (!isSearchOpen) {
+            // Focus on search input when opening
+            setTimeout(() => {
+                const searchInput = document.querySelector('.search-input');
+                if (searchInput) searchInput.focus();
+            }, 100);
+        } else {
+            // Clear search when closing
+            setSearchQuery('');
+            setSearchResults([]);
+            setShowResults(false);
+        }
+    };
+
+    const handleSearchSubmit = (e) => {
+        e.preventDefault();
+        if (searchQuery.trim() && searchResults.length > 0) {
+            // Navigate to first result
+            navigate(searchResults[0].link);
+            setIsSearchOpen(false);
+            setSearchQuery('');
+            setSearchResults([]);
+            setShowResults(false);
+        }
+    };
+
+    const handleResultClick = (link) => {
+        navigate(link);
+        setIsSearchOpen(false);
+        setSearchQuery('');
+        setSearchResults([]);
+        setShowResults(false);
     };
 
     const handleToggle = () => {
@@ -146,20 +219,113 @@ const Navbar = ({ normalLogo, stickyLogo, canvasLogo, layout, phone, container, 
                                                     <i className="ri-close-line" onClick={handleToggleSearch}></i>  
                                             }
                                             <div className='sticky_form'>
-                                                <form role="search" className="bs-search search-form">
-                                                    <div className="search-wrap">
+                                                <form role="search" className="bs-search search-form" onSubmit={handleSearchSubmit}>
+                                                    <div className="search-wrap" style={{position: 'relative'}}>
                                                         <label className="screen-reader-text active">Search for:</label>
                                                         <input
                                                             type="search"
-                                                            placeholder="Searching..."
+                                                            placeholder="Search services..."
                                                             name="s"
                                                             className="search-input"
                                                             value={searchQuery}
                                                             onChange={handleChange}
+                                                            autoComplete="off"
                                                         />
-                                                        <button type="submit" value="Search">
+                                                        <button type="submit" value="Search" aria-label="Search">
                                                             <i className="ri-search-line" />
                                                         </button>
+                                                        
+                                                        {/* Search Results Dropdown */}
+                                                        {showResults && searchResults.length > 0 && (
+                                                            <div style={{
+                                                                position: 'absolute',
+                                                                top: '100%',
+                                                                left: 0,
+                                                                right: 0,
+                                                                backgroundColor: 'white',
+                                                                border: '1px solid #e0e0e0',
+                                                                borderRadius: '8px',
+                                                                marginTop: '8px',
+                                                                boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
+                                                                zIndex: 9999,
+                                                                maxHeight: '400px',
+                                                                overflowY: 'auto'
+                                                            }}>
+                                                                {searchResults.map((result, index) => (
+                                                                    <div
+                                                                        key={index}
+                                                                        onClick={() => handleResultClick(result.link)}
+                                                                        style={{
+                                                                            padding: '12px 16px',
+                                                                            borderBottom: index < searchResults.length - 1 ? '1px solid #f0f0f0' : 'none',
+                                                                            cursor: 'pointer',
+                                                                            transition: 'background-color 0.2s'
+                                                                        }}
+                                                                        onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#f8f9fa'}
+                                                                        onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'white'}
+                                                                    >
+                                                                        <div style={{
+                                                                            display: 'flex',
+                                                                            alignItems: 'center',
+                                                                            justifyContent: 'space-between'
+                                                                        }}>
+                                                                            <div style={{flex: 1}}>
+                                                                                <div style={{
+                                                                                    fontWeight: '600',
+                                                                                    color: '#333',
+                                                                                    marginBottom: '4px',
+                                                                                    fontSize: '14px'
+                                                                                }}>
+                                                                                    {result.title}
+                                                                                </div>
+                                                                                <div style={{
+                                                                                    fontSize: '12px',
+                                                                                    color: '#666',
+                                                                                    overflow: 'hidden',
+                                                                                    textOverflow: 'ellipsis',
+                                                                                    whiteSpace: 'nowrap'
+                                                                                }}>
+                                                                                    {result.description}
+                                                                                </div>
+                                                                            </div>
+                                                                            <span style={{
+                                                                                fontSize: '11px',
+                                                                                color: '#F26F20',
+                                                                                fontWeight: '500',
+                                                                                marginLeft: '12px',
+                                                                                padding: '2px 8px',
+                                                                                backgroundColor: '#fff8f5',
+                                                                                borderRadius: '4px'
+                                                                            }}>
+                                                                                {result.type}
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                ))}
+                                                            </div>
+                                                        )}
+                                                        
+                                                        {/* No Results Message */}
+                                                        {showResults && searchResults.length === 0 && searchQuery.trim() && (
+                                                            <div style={{
+                                                                position: 'absolute',
+                                                                top: '100%',
+                                                                left: 0,
+                                                                right: 0,
+                                                                backgroundColor: 'white',
+                                                                border: '1px solid #e0e0e0',
+                                                                borderRadius: '8px',
+                                                                marginTop: '8px',
+                                                                padding: '16px',
+                                                                boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
+                                                                zIndex: 9999,
+                                                                textAlign: 'center',
+                                                                color: '#666',
+                                                                fontSize: '14px'
+                                                            }}>
+                                                                No results found for "{searchQuery}"
+                                                            </div>
+                                                        )}
                                                     </div>
                                                 </form>
                                             </div>

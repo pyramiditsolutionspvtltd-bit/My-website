@@ -11,7 +11,9 @@ const Banner1 = ({heart_pulse_orange2, heart_pulse_orange}) => {
             minHeight: '100vh',
             backgroundImage: 'none !important',
             background: 'transparent',
-            padding: 'clamp(180px, 25vh, 300px) 0 50px'
+            padding: 'clamp(100px, 20vh, 180px) 0 clamp(30px, 8vh, 60px)',
+            display: 'flex',
+            alignItems: 'center'
         }}>
             {/* Local Video Background */}
             <div style={{
@@ -59,7 +61,7 @@ const Banner1 = ({heart_pulse_orange2, heart_pulse_orange}) => {
                 className="excellence-badge excellence-badge-interactive" 
                 style={{
                     position: 'absolute',
-                    top: '100px',
+                    top: 'clamp(80px, 12vh, 120px)',
                     left: '50%',
                     transform: 'translateX(-50%)',
                     zIndex: 2,
@@ -78,16 +80,15 @@ const Banner1 = ({heart_pulse_orange2, heart_pulse_orange}) => {
                     src={excellenceLogo} 
                     alt="20 Years of Excellence" 
                     style={{
-                        width: 'auto',
+                        width: 'clamp(100px, 25vw, 140px)',
                         height: 'auto',
-                        maxHeight: 'clamp(120px, 14vw, 160px)',
                         objectFit: 'contain',
                         filter: 'drop-shadow(0 8px 25px rgba(242, 111, 32, 0.4))',
                         transition: 'all 0.4s ease',
                         borderRadius: '0%',
                         background: 'radial-gradient(circle, rgba(242, 111, 32, 0.1) 0%, transparent 70%)',
                         display: 'block',
-                        maxWidth: '90vw'
+                        maxWidth: '100%'
                     }}
                     className="excellence-logo excellence-logo-interactive"
                 />
@@ -100,11 +101,11 @@ const Banner1 = ({heart_pulse_orange2, heart_pulse_orange}) => {
                         top: '50%',
                         left: '50%',
                         transform: 'translate(-50%, -50%)',
-                        width: 'clamp(110px, 13vw, 170px)',
-                        height: 'clamp(110px, 13vw, 170px)',
-                        border: 'clamp(1.5px, 0.25vw, 3px) solid rgba(242, 111, 32, 0.3)',
+                        width: 'clamp(95px, 24vw, 160px)',
+                        height: 'clamp(95px, 24vw, 160px)',
+                        border: 'clamp(1.5px, 0.3vw, 3px) solid rgba(242, 111, 32, 0.3)',
                         borderRadius: '50%',
-                        borderTop: 'clamp(1.5px, 0.25vw, 3px) solid #F26F20',
+                        borderTop: 'clamp(1.5px, 0.3vw, 3px) solid #F26F20',
                         animation: 'excellenceRotate 4s linear infinite',
                         zIndex: -1,
                         transition: 'all 0.3s ease'
@@ -119,9 +120,9 @@ const Banner1 = ({heart_pulse_orange2, heart_pulse_orange}) => {
                         top: '50%',
                         left: '50%',
                         transform: 'translate(-50%, -50%)',
-                        width: 'clamp(100px, 12.5vw, 175px)',
-                        height: 'clamp(100px, 12.5vw, 175px)',
-                        border: 'clamp(1px, 0.15vw, 2px) solid rgba(242, 111, 32, 0.2)',
+                        width: 'clamp(110px, 28vw, 180px)',
+                        height: 'clamp(110px, 28vw, 180px)',
+                        border: 'clamp(1px, 0.2vw, 2px) solid rgba(242, 111, 32, 0.2)',
                         borderRadius: '50%',
                         animation: 'excellencePulse 2s ease-in-out infinite',
                         zIndex: -2,
@@ -137,8 +138,8 @@ const Banner1 = ({heart_pulse_orange2, heart_pulse_orange}) => {
                         top: '50%',
                         left: '50%',
                         transform: 'translate(-50%, -50%) scale(0.8)',
-                        width: 'clamp(105px, 13vw, 180px)',
-                        height: 'clamp(105px, 13vw, 180px)',
+                        width: 'clamp(115px, 30vw, 190px)',
+                        height: 'clamp(115px, 30vw, 190px)',
                         border: '1px solid rgba(242, 111, 32, 0.1)',
                         borderRadius: '50%',
                         opacity: 0,
@@ -158,11 +159,26 @@ const Banner1 = ({heart_pulse_orange2, heart_pulse_orange}) => {
                                     <span>Welcome To Pyraramid IT Solutions</span>
                                     <img src={heart_pulse_orange} alt=""/>
                                     </div>*/}
-                                    <h1 className="title wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.8s" style={{letterSpacing: '-0.05em', wordBreak: 'break-word'}}>
+                                    <h1 className="title wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.8s" style={{
+                                        letterSpacing: '-0.05em', 
+                                        wordBreak: 'break-word',
+                                        fontSize: 'clamp(1.75rem, 5vw, 3.5rem)',
+                                        lineHeight: '1.2',
+                                        marginBottom: 'clamp(15px, 3vh, 25px)'
+                                    }}>
                                         Driving Innovations Through Intelligent<span> Networks</span>
                                     </h1>
-                                    <p className="wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.2s" style={{marginBottom: '30px'}}>To empower organizations through intelligent, secure, and scalable network solutions that accelerate digital transformation and sustainable growth.</p>
-                                    <Link className="main-btn wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.6s" to="/services" style={{marginBottom: '20px', display: 'inline-block'}}>Discover More <i className="ri-arrow-right-fill"></i></Link>
+                                    <p className="wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.2s" style={{
+                                        marginBottom: 'clamp(20px, 4vh, 30px)',
+                                        fontSize: 'clamp(0.9rem, 2vw, 1.1rem)',
+                                        lineHeight: '1.6'
+                                    }}>To empower organizations through intelligent, secure, and scalable network solutions that accelerate digital transformation and sustainable growth.</p>
+                                    <Link className="main-btn wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.6s" to="/services" style={{
+                                        marginBottom: 'clamp(15px, 3vh, 20px)', 
+                                        display: 'inline-block',
+                                        padding: 'clamp(10px, 2vh, 14px) clamp(20px, 4vw, 30px)',
+                                        fontSize: 'clamp(0.9rem, 2vw, 1rem)'
+                                    }}>Discover More <i className="ri-arrow-right-fill"></i></Link>
                             </div>
                         </div>
                         <div className="col-lg-2"></div>

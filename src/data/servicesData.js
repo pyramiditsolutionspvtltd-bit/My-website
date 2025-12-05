@@ -1398,61 +1398,65 @@ faqs: [
 
 // Ordered service IDs based on the specified sequence
 const orderedServiceIds = [
-  // 1. Structured Cabling
+  // 1. Network Solutions
+  'networking-internetworking',
+  
+  // 2. Structured Cabling
   'structured-cabling',
   
-  // 2. GPON (FTTx)
+  // 3. IP Surveillance
+  'ip-surveillance',
+  
+  // 4. GPON (FTTx)
   'gpon-network',
   
-  // 3. Unified Communications
+  // 5. Unified Communications
   'unified-communications',
   
-  // 4. Unified Computing
+  // 6. Unified Computing
   'unified-computing',
   
-  // 5. Data Center Services
+  // 7. Data Center Services
   'data-center-network',
   
-  // 6. Cloud Computing
+  // 8. Cloud Computing
   'cloud-computing-service',
   
-  // 7. Cyber Security Solutions
+  // 9. Cyber Security Solutions
   'cyber-security',
   
-  // 8. VAPT (Security Services AV/VA)
+  // 10. VAPT (included in Cyber Security)
   'security-services-av-va',
   
-  // 9. IT Risk Assessment
+  // 11. IT Risk Assessment
   'it-risk-assessment',
   
-  // 10. IT Assessment
+  // 12. IT Assessment
   'it-assessment',
   
-  // 11. IoT Solutions
+  // 13. IoT Solutions
   'internet-of-things-iot',
   
-  // 12. Audio & Video Integration
+  // 14. Audio & Video Integration
   'audio-video-integration',
   
-  // 13. FTTH Services
+  // 15. FTTH Services
   'ftth-fiber-to-home',
   
-  // 14. IT Consulting
+  // 16. IT Consulting
   'it-itil-consulting'
   
   // Hidden services (not displayed on main services page)
-  // 'networking-internetworking', // Network Solutions
-  // 'ip-surveillance', // IP Surveillance
   // 'utp-cabling',
   // 'stp-cabling',
   // 'optical-fiber-cabling',
   // 'voice-cabling',
-  // 'vulnerability-assessment-antivirus',
-  // 'ip-surveillance-cloud',
   // 'lan-network',
-  // 'wan-network',
   // 'wlan-network',
-  // 'wireless-solutions'
+  // 'wan-network',
+  // 'wireless-solutions',
+  // 'vulnerability-assessment-antivirus',
+  // 'ip-surveillance-cloud'
 ];
 
 export const getServiceById = (id) => {
