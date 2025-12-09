@@ -1218,21 +1218,34 @@
 
 // Strength List Styles
 .strength-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 .strength-list li {
-    display: flex;
-    align-items: flex-start;
-    gap: 8px;
-    margin-bottom: 8px;
-    line-height: 1.4;
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 8px !important;
+    margin-bottom: 8px !important;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    line-height: 1.4 !important;
+    list-style: none !important;
+}
+
+.strength-list li:last-child {
+    margin-bottom: 0 !important;
 }
 
 .strength-list i {
-    color: #00b894; /* match existing theme icon color */
-    font-size: 18px;
-    margin-top: 2px;
+    color: #00b894 !important;
+    font-size: 18px !important;
+    margin-top: 2px !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    flex-shrink: 0 !important;
+    min-width: 18px !important;
+    width: 18px !important;
 }

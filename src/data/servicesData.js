@@ -91,7 +91,7 @@ export const servicesData = {
 
   'security-services-av-va': {
     id: 'security-services-av-va',
-    title: 'Security Services (AV / VA)',
+    title: 'Vulnerability Assessment and Penetration Testing',
     category: 'IT Services',
     description: 'Advanced antivirus and vulnerability assessment services to protect your digital infrastructure.',
     fullDescription: 'Today’s cyber security landscape demands a comprehensive and integrated approach to ensure the integrity of networks, endpoints, devices and data. Email and web usage has become way of life. It has become an important aspect of every organization as enterprises use email for their primary communications – internal & external. Hourly disruptions to electronic communications due to viruses, spam, Trojans, spyware, phishing and other email-based threats is very common Malicious malware and other attacks are also creating havoc on today’s businesses. Over the years, these attacks have evolved from random hacking incidents to criminal acts. Clean-up is extremely difficult and costly. The data breaches & leakage is an additional concern. Pyramids provide comprehensive network security solution according to the nature of business and applications being used by customers..',
@@ -1456,7 +1456,24 @@ const orderedServiceIds = [
   // 'wan-network',
   // 'wireless-solutions',
   // 'vulnerability-assessment-antivirus',
-  // 'ip-surveillance-cloud'
+  // 'ip-surveillance-cloud',
+  // 'unified-collaboration'
+];
+
+// Hidden services that should not be displayed
+const hiddenServiceIds = [
+  'utp-cabling',
+  'stp-cabling',
+  'optical-fiber-cabling',
+  'optical-cabling',
+  'voice-cabling',
+  'lan-network',
+  'wlan-network',
+  'wan-network',
+  'wireless-solutions',
+  'vulnerability-assessment-antivirus',
+  'ip-surveillance-cloud',
+  'unified-collaboration'
 ];
 
 export const getServiceById = (id) => {
@@ -1464,7 +1481,8 @@ export const getServiceById = (id) => {
 };
 
 export const getServicesByCategory = (category) => {
-  const categoryServices = Object.values(servicesData).filter(service => service.category === category);
+  const categoryServices = Object.values(servicesData)
+    .filter(service => service.category === category && !hiddenServiceIds.includes(service.id));
   // Sort by the ordered list
   return categoryServices.sort((a, b) => {
     const indexA = orderedServiceIds.indexOf(a.id);
@@ -1476,17 +1494,17 @@ export const getServicesByCategory = (category) => {
 };
 
 export const getAllServices = () => {
-  // Return services in the specified order
+  // Return services in the specified order, excluding hidden services
   const allServices = [];
   orderedServiceIds.forEach(id => {
-    if (servicesData[id]) {
+    if (servicesData[id] && !hiddenServiceIds.includes(id)) {
       allServices.push(servicesData[id]);
     }
   });
   
-  // Add any services not in the ordered list at the end
+  // Add any services not in the ordered list at the end (but exclude hidden services)
   Object.values(servicesData).forEach(service => {
-    if (!orderedServiceIds.includes(service.id)) {
+    if (!orderedServiceIds.includes(service.id) && !hiddenServiceIds.includes(service.id)) {
       allServices.push(service);
     }
   });

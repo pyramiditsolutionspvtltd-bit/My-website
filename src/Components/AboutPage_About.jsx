@@ -58,20 +58,20 @@ const AboutPage_About = ({ about_image, count_down_experience_icon, heart_pulse_
                             <p>
                                 Our expertise lies in delivering customer-focused IT services to organizations of all sizes, backed by a team of highly skilled and technically certified professionals. With a strong emphasis on continuous skill development, we have built capabilities across multiple technologies, including Microsoft, Cisco, Juniper, FortiGate, D-Link, SYSTIMAX, AMP, and Clipsal. This technical strength, combined with our commitment to excellence, has enabled us to build long-term relationships and consistently deliver value to our clients.
                             </p>
-                            <ul>
+                            <div style={{paddingTop: '30px'}}>
                                 <h4>Key Strengths of Pyramid IT Solutions:</h4>
-                               <ul class="strength-list">
-    <li><i class="ri-check-line"></i> End-to-end network design and implementation</li>
-    <li><i class="ri-check-line"></i> One of the fastest-growing networking companies in Hyderabad.</li>
-    <li><i class="ri-check-line"></i> Specialized in Wired, Wireless & Optical Fiber solutions</li>
-    <li><i className="ri-check-line"></i> Proven track record with SMBs and large campus networks</li>
-    <li><i class="ri-check-line"></i> Authorized partners with leading global IT brands</li>
-    <li><i class="ri-check-line"></i> 20+ years of industry experience across multiple verticals.</li>
-    <li><i class="ri-check-line"></i> Strong execution of turnkey voice & data solutions.</li>
-    <li><i class="ri-check-line"></i> Certified team with Cisco, Juniper & HP</li>
-</ul>
-                               
-                            </ul>
+                                <br />
+                                <ul className="strength-list">
+                                    <li><i className="ri-check-line"></i> End-to-end network design and implementation</li>
+                                    <li><i className="ri-check-line"></i> One of the fastest-growing networking companies in Hyderabad.</li>
+                                    <li><i className="ri-check-line"></i> Specialized in Wired, Wireless & Optical Fiber solutions</li>
+                                    <li><i className="ri-check-line"></i> Proven track record with SMBs and large campus networks</li>
+                                    <li><i className="ri-check-line"></i> Authorized partners with leading global IT brands</li>
+                                    <li><i className="ri-check-line"></i> 20+ years of industry experience across multiple verticals.</li>
+                                    <li><i className="ri-check-line"></i> Strong execution of turnkey voice & data solutions.</li>
+                                    <li><i className="ri-check-line"></i> Certified team with Cisco, Juniper & HP</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
